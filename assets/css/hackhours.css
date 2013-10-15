@@ -98,6 +98,16 @@ ul.photo-thumbs > li {
     margin: 5px;
 }
 
+div.laphoto {
+    margin: 0 auto;
+    height: 389px;
+    max-width: 341px;
+    background-size: 341px 389px;
+    background-repeat: no-repeat;
+    background-image: url('../images/hackhours/laphoto@medium.png');
+    background-position: center;
+}
+
 @media all and (max-width: 770px) {
     body {
         padding: 0;
@@ -113,5 +123,11 @@ ul.photo-thumbs > li {
     }
     div.footer-banner {
         margin: 40px 0px 0px 0px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    div.laphoto {
+        background-image: url('../images/hackhours/laphoto@medium@2x.png');
     }
 }
