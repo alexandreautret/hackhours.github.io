@@ -98,6 +98,16 @@ ul.photo-thumbs > li {
     margin: 5px;
 }
 
+div.hackhours-logo {
+    margin: 0 auto;
+    height: 68px;
+    max-width: 437px;
+    background-size: 437px 68px;
+    background-repeat: no-repeat;
+    background-image: url('../images/hackhours/logo_white@medium.png');
+    background-position: center;
+}
+
 div.laphoto {
     margin: 0 auto;
     height: 389px;
@@ -129,5 +139,8 @@ div.laphoto {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     div.laphoto {
         background-image: url('../images/hackhours/laphoto@medium@2x.png');
+    }
+    div.hackhours-logo {
+        background-image: url('../images/hackhours/logo_white@medium@2x.png');
     }
 }
