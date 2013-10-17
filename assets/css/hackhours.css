@@ -29,6 +29,12 @@ a:hover {
 .btn.btn-primary:hover {
     background-color: #663878;
 }
+.btn.btn-primary.btn-white {
+    background-color: #ffffff;
+}
+.btn.btn-primary.btn-white:hover {
+    background-color: #ffffff;
+}
 .btn-group a{
     color: #ffffff !important;
 }
