@@ -36,7 +36,7 @@
             img { height: auto; line-height: 100%;}
         }
             /* Client-specific Styles */
-        #outlook a { padding: 0; }	/* Force Outlook to provide a "view in browser" button. */
+        #outlook a { padding: 0; }  /* Force Outlook to provide a "view in browser" button. */
         body { width: 100% !important; }
         .ReadMsgBody { width: 100%; }
         .ExternalClass { width: 100%; display:block !important; } /* Force Hotmail to display emails at full width */
@@ -47,14 +47,14 @@
         br, strong br, b br, em br, i br { line-height:100%; }
         h1, h2, h3, h4, h5, h6 { line-height: 100% !important; -webkit-font-smoothing: antialiased; }
         h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: blue !important; }
-        h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {	color: red !important; }
+        h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active { color: red !important; }
             /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
         h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { color: purple !important; }
             /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
         table td, table tr { border-collapse: collapse; }
         .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
             color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;
-        }	/* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+        }   /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
             /* This most probably won't work in all email clients. Don't include code blocks in email. */
         code {
             white-space: normal;
@@ -107,16 +107,14 @@
 <tbody><tr>
 <td bgcolor="#ececec" align="center">
 <table width="640" cellspacing="0" cellpadding="0" border="0" style="margin:0 10px;" class="w640">
-<tbody><tr><td width="640" height="20" class="w640" align="center">
-    <a style="color: #242424;" href="http://hackhours.co/mailing-hackhours2.html">Version en ligne</a>
-</td></tr>
-
-
+<tbody>
 <tr>
     <td width="640" bgcolor="#77488A" align="center" class="w640" id="header">
         <div align="center" style="text-align: center">
-            <br>
-            <br>
+          
+          <a style="color: #5A2C6E; font-size:7pt; margin-top:5px; " href="http://hackhours.co/mailing-hackhours2.html">Version en ligne</a>
+          <br/>
+          <br/>
             <a href="http://hackhours.co">
                 <img width="437" border="0" align="top" style="display: inline" class="w640" src="http://s3.amazonaws.com/hackhours/logo_white%40medium.png" editable="true" label="Header Image" id="customHeaderImage">
             </a>
@@ -136,158 +134,156 @@
 <td width="580" class="w580">
 <repeater>
 
-    <layout label="Text only">
-        <table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
-            <tbody><tr>
-                <td width="580" class="w580">
-                    <p align="center" class="article-title" style="font-size:31px; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;"><singleline label="Title">HackHours #2</singleline></p>
-                    <div align="center" class="article-content" style="font-size: 17px">
-                        <multiline label="Description">Viens participer au hackathon organisé par HackHours !</multiline>
-                    </div>
-                </td>
-            </tr>
-            <tr><td width="580" height="10" class="w580"></td></tr>
-            </tbody></table>
-    </layout>
+<layout label="Text only">
+    <table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
+        <tbody><tr>
+            <td width="580" class="w580">
+                <p align="center" class="article-title" style="font-size:31px; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;"><singleline label="Title">HackHours #2</singleline></p>
+                <div align="center" class="article-content" style="font-size: 17px">
+                    <multiline label="Description">Viens participer au hackathon organisé par HackHours !</multiline>
+                </div>
+            </td>
+        </tr>
+        <tr><td width="580" height="10" class="w580"></td></tr>
+        </tbody></table>
+</layout>
 
 
-    <layout label="Text with full-width image">
-        <table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
-            <tbody><tr>
-                <td width="580" class="w580">
-                    <p align="center" class="article-title" style="line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;"><a style="color: #5A2C6E;text-decoration: none;" href="https://www.google.fr/maps/preview#!q=Seine+Innopolis%2C+Rue+de+la+R%C3%A9publique%2C+Le+Petit-Quevilly&data=!4m15!2m14!1m13!1s0x47e0de1bac59fe27%3A0xd0072d75c26151fa!3m8!1m3!1d5110632!2d3.9355466!3d46.6694491!3m2!1i1440!2i700!4f13.1!4m2!3d49.428556!4d1.066036" label="Title">@ La cantine - Seine Innopolis</a></p>
-                </td>
-            </tr>
-            <tr>
-                <td width="580" class="w580" align="center">
-                    <a href="https://www.google.fr/maps/preview#!q=Seine+Innopolis%2C+Rue+de+la+R%C3%A9publique%2C+Le+Petit-Quevilly&data=!4m15!2m14!1m13!1s0x47e0de1bac59fe27%3A0xd0072d75c26151fa!3m8!1m3!1d5110632!2d3.9355466!3d46.6694491!3m2!1i1440!2i700!4f13.1!4m2!3d49.428556!4d1.066036"><img width="437" border="0" align="top" style="display: inline" class="w640" src="http://s3.amazonaws.com/hackhours/seine-innopolis.jpg" editable="true" label="Header Image" id="customHeaderImage"></a>
+<layout label="Text with full-width image">
+    <table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
+        <tbody><tr>
+            <td width="580" class="w580">
+                <p align="center" class="article-title" style="line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;"><a style="color: #5A2C6E;text-decoration: none;" href="https://www.google.fr/maps/preview#!q=Seine+Innopolis%2C+Rue+de+la+R%C3%A9publique%2C+Le+Petit-Quevilly&data=!4m15!2m14!1m13!1s0x47e0de1bac59fe27%3A0xd0072d75c26151fa!3m8!1m3!1d5110632!2d3.9355466!3d46.6694491!3m2!1i1440!2i700!4f13.1!4m2!3d49.428556!4d1.066036" label="Title">@ La cantine - Seine Innopolis</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="580" class="w580" align="center">
+                <a href="https://www.google.fr/maps/preview#!q=Seine+Innopolis%2C+Rue+de+la+R%C3%A9publique%2C+Le+Petit-Quevilly&data=!4m15!2m14!1m13!1s0x47e0de1bac59fe27%3A0xd0072d75c26151fa!3m8!1m3!1d5110632!2d3.9355466!3d46.6694491!3m2!1i1440!2i700!4f13.1!4m2!3d49.428556!4d1.066036"><img width="437" border="0" align="top" style="display: inline" class="w640" src="http://s3.amazonaws.com/hackhours/seine-innopolis.jpg" editable="true" label="Header Image" id="customHeaderImage"></a>
 
-                </td>
-            </tr>
-            <tr>
-                <td width="580" height="25" class="w580"></td>
-            </tr>
-            <tr>
-                <td width="580" height="5" class="w580" style="background-color: rgb(119, 72, 138);"></td>
-            </tr>
-            <tr>
-                <td width="580" height="25" class="w580"></td>
-            </tr>
+            </td>
+        </tr>
+        <tr>
+            <td width="580" height="25" class="w580"></td>
+        </tr>
+        <tr>
+            <td width="580" height="5" class="w580" style="background-color: rgb(119, 72, 138);"></td>
+        </tr>
+        <tr>
+            <td width="580" height="25" class="w580"></td>
+        </tr>
 
-            </tbody></table>
-    </layout>
-
-
-    <layout label="Text with right-aligned image">
-        <table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
-            <tbody><tr>
-                <td>
-                    <table align="left" width="190" cellspacing="0" cellpadding="0" border="0" class="w180">
-                        <tbody>
-                        <tr>
-                            <td align="center">
-                                <img height="100" border="0" align="top" style="display: inline" src="http://s3.amazonaws.com/hackhours/food.png" editable="true" label="Header Image" id="customHeaderImage">
-
-                                <p align="center" style="padding: 15px 0 0 0; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" class="article-title"><singleline label="Title">Repas </singleline></p>
-
-                                <div align="center" class="article-content">
-                                    <multiline label="Description">Tous les repas vous seront fournis gratuitement.</multiline>
-                                </div>
-
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                    <table align="left" width="190" cellspacing="0" cellpadding="0" border="0" class="w180">
-                        <tbody>
-                        <tr>
-                            <td align="center">
-                                <img height="100" border="0" align="top" style="display: inline" src="http://s3.amazonaws.com/hackhours/hack.png" editable="true" label="Header Image" id="customHeaderImage">
-
-                                <p align="center" style="padding: 15px 0 0 0; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" class="article-title"><singleline label="Title">Hack </singleline></p>
-
-                                <div align="center" class="article-content">
-                                    <multiline label="Description">Vous disposerez de 28 heures pour créer la meilleure application.</multiline>
-                                </div>
-
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                    <table align="left" width="190" cellspacing="0" cellpadding="0" border="0" class="w180">
-                        <tbody>
-                        <tr>
-                            <td align="center">
-                                <img height="100" border="0" align="top" style="display: inline" src="http://s3.amazonaws.com/hackhours/winner.png" editable="true" label="Header Image" id="customHeaderImage">
-
-                                <p align="center" style="padding: 15px 0 0 0; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" class="article-title"><singleline label="Title">Récompenses </singleline></p>
-
-                                <div align="center" class="article-content">
-                                    <multiline label="Description">Les meilleurs projets seront récompensés.</multiline>
-                                </div>
-
-                            </td>
-                        </tr>
-
-                        </tbody>
-                    </table>
+        </tbody></table>
+</layout>
 
 
-                </td>
+<layout label="Text with right-aligned image">
+    <table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
+        <tbody><tr>
+            <td>
+                <table align="left" width="190" cellspacing="0" cellpadding="0" border="0" class="w180">
+                    <tbody>
+                    <tr>
+                        <td align="center">
+                            <img height="100" border="0" align="top" style="display: inline" src="http://s3.amazonaws.com/hackhours/food.png" editable="true" label="Header Image" id="customHeaderImage">
+
+                            <p align="center" style="padding: 15px 0 0 0; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" class="article-title"><singleline label="Title">Repas </singleline></p>
+
+                            <div align="center" class="article-content">
+                                <multiline label="Description">Tous les repas vous seront fournis gratuitement.</multiline>
+                            </div>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table align="left" width="190" cellspacing="0" cellpadding="0" border="0" class="w180">
+                    <tbody>
+                    <tr>
+                        <td align="center">
+                            <img height="100" border="0" align="top" style="display: inline" src="http://s3.amazonaws.com/hackhours/hack.png" editable="true" label="Header Image" id="customHeaderImage">
+
+                            <p align="center" style="padding: 15px 0 0 0; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" class="article-title"><singleline label="Title">Hack </singleline></p>
+
+                            <div align="center" class="article-content">
+                                <multiline label="Description">Vous disposerez de 28 heures pour créer la meilleure application.</multiline>
+                            </div>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table align="left" width="190" cellspacing="0" cellpadding="0" border="0" class="w180">
+                    <tbody>
+                    <tr>
+                        <td align="center">
+                            <img height="100" border="0" align="top" style="display: inline" src="http://s3.amazonaws.com/hackhours/winner.png" editable="true" label="Header Image" id="customHeaderImage">
+
+                            <p align="center" style="padding: 15px 0 0 0; line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" class="article-title"><singleline label="Title">Récompenses </singleline></p>
+
+                            <div align="center" class="article-content">
+                                <multiline label="Description">Les meilleurs projets seront récompensés.</multiline>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+            </td>
 
 
 
-            </tr>
-            <tr height="70">
-                <td width="580" class="w580" align="center" valign="bottom">
-                    <table>
-                        <tbody>
+        </tr>
+        <tr height="70">
+            <td width="580" class="w580" align="center" valign="bottom">
+                <table>
+                    <tbody>
 
-                        <tr>
-                            <td width="165" class="w140" valign="middle" height="32" align="center" style=" background-color:#77488A;  border-radius:5px; background-clip: padding-box;font-size:18px; text-align:center;  color:#ffffff; font-weight: normal; padding-left:18px; padding-right:18px; " title="mainColor">
+                    <tr>
+                        <td width="165" class="w140" valign="middle" height="32" align="center" style=" background-color:#77488A;  border-radius:5px; background-clip: padding-box;font-size:18px; text-align:center;  color:#ffffff; font-weight: normal; padding-left:18px; padding-right:18px; " title="mainColor">
 
                                             <span style="color: #ffffff; font-weight: normal;">
                                               <a style="text-decoration: none; color: #ffffff; font-weight: normal;" href="https://hackhours2.eventbrite.fr">
                                                   Inscription gratuite
                                               </a>
                                             </span>
-                            </td>
-                        </tr>
+                        </td>
+                    </tr>
 
-                        </tbody>
-                    </table>
+                    </tbody>
+                </table>
 
-                </td>
-            </tr>
-            <tr>
-                <td width="580" height="25" class="w580"></td>
-            </tr>
-            <tr>
-                <td width="580" height="5" class="w580" style="background-color: rgb(119, 72, 138);"></td>
-            </tr>
-            <tr>
-                <td width="580" height="25" class="w580"></td>
-            </tr>
-            </tbody>
-        </table>
-    </layout>
-
-
-    <layout label="Text with left-aligned image">
-        <table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
-            <tbody><tr>
-                <td width="580" class="w580">
-                    <p align="center" class="article-title" style="line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;"><singleline label="Title">Sponsors</singleline></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="580" height="25" class="w580"></td>
+        </tr>
+        <tr>
+            <td width="580" height="5" class="w580" style="background-color: rgb(119, 72, 138);"></td>
+        </tr>
+        <tr>
+            <td width="580" height="25" class="w580"></td>
+        </tr>
+        </tbody>
+    </table>
+</layout>
 
 
-                </td>
-            </tr>
-            <tr><td width="580" height="10" class="w580"></td></tr>
-            </tbody></table>
+<layout label="Text with left-aligned image">
+<table width="580" cellspacing="0" cellpadding="0" border="0" class="w580">
+    <tbody><tr>
+        <td width="580" class="w580">
+            <p align="center" class="article-title" style="line-height:24px; color: #5A2C6E; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;"><singleline label="Title">Sponsors</singleline></p>
 
 
+        </td>
+    </tr>
+    <tr><td width="580" height="10" class="w580"></td></tr>
+    </tbody></table>
 
 
 
@@ -295,7 +291,9 @@
 
 
 
-    </layout>
+
+
+</layout>
 
 
 
@@ -509,15 +507,14 @@
             <tbody><tr><td width="30" class="w30"></td><td width="360" height="30" class="w580 h0"></td><td width="60" class="w0"></td><td width="160" class="w0"></td><td width="30" class="w30"></td></tr>
             <tr>
                 <td width="30" class="w30"></td>
-                <td width="360" valign="top" class="w580">
+                <td width="480" valign="top" class="w580">
                     <span class="hide"><p align="left" class="footer-content-left" id="permission-reminder"></p></span>
-                    <p style="color: #FFFFFF;" align="center" class="footer-content-left"><multiline lang="en"><a style="color: #FFFFFF; text-decoration: none; font-weight: bold;" href="https://twitter.com/hackhours">@hackhours</a> | <a style="color: #FFFFFF; text-decoration: none; font-weight: bold;" href="https://facebook.com/hackhours">facebook.com/hackhours</a> | <a style="color: #FFFFFF; text-decoration: none; font-weight: bold;" href="http://hackhours.co">hackhours.co</a></multiline></p>
+                    <p style="color: #FFFFFF;" align="center" class="footer-content-left"><multiline lang="en"><a style="color: #FFFFFF; text-decoration: none; font-weight: bold;" href="https://twitter.com/hackhours">@hackhours</a> | <a style="color: #FFFFFF; text-decoration: none; font-weight: bold;" href="https://facebook.com/hackhours">facebook.com/hackhours</a> | <a style="color: #FFFFFF; text-decoration: none; font-weight: bold;" href="http://hackhours.co">hackhours.co</a> | <a  style="color: #FFFFFF; text-decoration: none; font-weight: bold;" href="[[UNSUB_LINK_FR]]">Désinscription</a></multiline></p>
                 </td>
                 <td width="60" class="hide w0"></td>
                 <td width="160" valign="top" class="hide w0">
-                    <p align="right" class="footer-content-right" id="street-address"></p>
                 </td>
-                <td width="30" class="w30"></td>
+                <td width="30" class="w30"><p align="right" class="footer-content-right" id="street-address"></p></td>
             </tr>
             <tr><td width="30" class="w30"></td><td width="360" height="15" class="w580 h0"></td><td width="60" class="w0"></td><td width="160" class="w0"></td><td width="30" class="w30"></td></tr>
             </tbody></table>
@@ -529,5 +526,3 @@
 </tr>
 </tbody></table>
 </body></html>
-
-
