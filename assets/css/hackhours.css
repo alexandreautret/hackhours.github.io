@@ -21,13 +21,20 @@ a:hover {
     color: #542B65 !important;
 }
 .top-header {
-    background-color: #77488A;
+    background-color: #F2F2F2;
+    border-top: 6px solid #77488A;
 }
 .btn.btn-primary {
     background-color: #5A2C6E;
 }
 .btn.btn-primary:hover {
     background-color: #663878;
+}
+.btn.btn-primary.btn-grey {
+    background-color: #D3D3D3;
+}
+.btn.btn-primary.btn-grey:hover {
+    background-color: #C1C1C1;
 }
 .btn.btn-primary.btn-white {
     background-color: #ffffff;
@@ -44,6 +51,12 @@ a:hover {
 .footer-banner a{
     color: #FFFFFF !important;
 }
+footer {
+    background-color: #F2F2F2 !important;
+}
+.tile {
+    background-color: #F2F2F2 !important;
+}
 .social-links {
     color: #FFFFFF !important;
 }
@@ -51,7 +64,7 @@ a:hover {
     margin-left: 0.8em;
 }
 .social-section {
-    background-color: #EDEFF1 !important;
+    background-color: #F2F2F2 !important;
     margin: 10px 0px;
     padding: 20px 0px;
 }
@@ -77,6 +90,12 @@ a:hover {
     border-bottom: 8px solid #77488A;
     padding: 20px 0px;
     margin-bottom: 40px !important;
+}
+
+.section-subtitle {
+    padding: 20px 0px;
+    margin: 25px 0px !important;
+    text-align: center;
 }
 
 .svg-color {
@@ -110,7 +129,7 @@ div.hackhours-logo {
     max-width: 437px;
     background-size: 437px 68px;
     background-repeat: no-repeat;
-    background-image: url('../images/hackhours/logo_white@medium.png');
+    background-image: url('../images/hackhours/logo_purple@medium.png');
     background-position: center;
 }
 
@@ -122,6 +141,23 @@ div.laphoto {
     background-repeat: no-repeat;
     background-image: url('../images/hackhours/laphoto@medium.png');
     background-position: center;
+}
+
+div.opendata {
+    margin: 0 auto;
+    height: 339px;
+    max-width: 346px;
+    background-size: 346px 339px;
+    background-repeat: no-repeat;
+    background-image: url('../images/hackhours/opendata@medium.png');
+    background-position: center;
+}
+
+div.laphoto-event {
+    background-color: #77488A;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @media all and (max-width: 770px) {
@@ -147,7 +183,7 @@ div.laphoto {
         background-image: url('../images/hackhours/laphoto@medium@2x.png');
     }
     div.hackhours-logo {
-        background-image: url('../images/hackhours/logo_white@medium@2x.png');
+        background-image: url('../images/hackhours/logo_purple@medium@2x.png');
     }
 }
 
