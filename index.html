@@ -1,658 +1,793 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Hack Hours</title>
-        <meta name="description" content="">
-        <link rel="shortcut icon" href="assets/48by48.ico">
-        <link href="assets/css/bootstrap.css" rel="stylesheet">
-        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="assets/css/flat-ui.css" rel="stylesheet">
-        <link href="assets/css/hackhours.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>HackHours - Hackathon en Normandie</title>
+    <meta name="description" content="HackHours est une association qui organise des hackathons sur la région normande. Hackathon Open Data le 11 & 12 avril à Rouen.">
+    <meta name="author" content="HackHours">
 
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-        </script>
-    </head>
-    <body>
-        <div class="top-header">
-            <p>&nbsp;</p>
-            <div class="container">
-                <div class="row">
-                    <div class="span12 text-center">
-                        <div class="hackhours-logo"></div>
-                        <h4 class="maxim">Un minimum d'heures pour un maximum d'ambitions</h4>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="span12 text-center">
-                        <div class="btn-toolbar">
-                            <div class="btn-group">
-                              <a class="btn btn-primary btn-grey" href="#edition"><i class="fui-check-inverted-2"></i>&nbsp;Edition #2</a>
-                              <a class="btn btn-primary btn-grey" href="#concept"><i class="fui-eye"></i>&nbsp;Concept</a>
-                              <a class="btn btn-primary btn-grey" href="#sponsors"><i class="fui-heart"></i>&nbsp;Sponsors</a>
-                              <a class="btn btn-primary btn-grey" href="#contact"><i class="fui-mail"></i>&nbsp;Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="next-event text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="span12">
-                            <div class="opendata"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span12">
-                            <p>&nbsp;</p>
-                            <p style="color:#999999 !important;">Plus de détails sur l'évènement </br><a href="http://www.seinemaritime.net/institution/le-portail-open-data-76.html" style="color:#999999 !important;" target="_blank">www.seinemaritime.net/institution/le-portail-open-data-76.html</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <div class="social-section">
-            <div class="container text-center">
-                <h4>Suivez notre actualité sur les réseaux sociaux</h4>
-                <ul class="social-buttons">
-                    <li><div class="fb-like" data-href="https://www.facebook.com/hackhours" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div></li>
-                    <li><a href="https://twitter.com/hackhours" class="twitter-follow-button" style="padding: 4px 10px;" data-show-count="true" data-size="medium" data-show-screen-name="true">Follow @hackhours</a></li>
-                </ul>
-            </div>
-            <p>&nbsp;</p>
-            <div class="container text-center">
-                <h4>Abonnez-vous à notre newsletter</h4>
-                <div class="row">
-                    <div class="span4">&nbsp;</div>
-                    <div class="span4">
-                        <!-- Begin MailChimp Signup Form -->
-                        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-                        <style type="text/css">
-                            #mc_embed_signup{clear:left; text-align: center;}
-                            #mc_embed_signup form{padding:0px; margin-bottom: 0px;}
-                            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                        </style>
-                        <div id="mc_embed_signup">
-                        <form action="http://hackhours.us6.list-manage1.com/subscribe/post?u=e800801fe9693167a14741797&amp;id=e81a12e05e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Font Code -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+    <link href="css/transitions.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <style type="text/css"></style>
 
-                        <div class="mc-field-group text-center">
-                            <label for="mce-EMAIL">Adresse Email</label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                        </div>
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_e800801fe9693167a14741797_e81a12e05e" value=""></div>
-                            <div class="clear text-center"><input type="submit" value="S'abonner" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                        </form>
-                        </div>
-                        <!--End mc_embed_signup-->
-                    </div>
-                    <div class="span4">&nbsp;</div>
-                </div>
-            </div>
-        </div>
+    <!-- Enable this css if you want to override styles-->
+    <!--<link href="css/override.css" rel="stylesheet" media="screen">-->
 
-<!-- EDITION #2 -->
-        <a name="edition"></a>
-        <div class="container">
-            <div class="section-title row">
-                <h2><span class="fui-eye"></span>Edition #2</h2>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="shortcut icon" href="img/icons/48by48.ico">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon.png">
+    <script type="text/javascript" src="js/modernizr-1.0.min.js"></script>
+</head>
+
+<body onLoad="initialize()">
+<!-- start HEADER -->
+<section id="top" class="page-block">
+    <header id="home">
+        <div class="container clearfix">
+            <div class="navigation">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3">
+                        <h1 class="logo">
+                            <a href="index.html" title="Primo"><img class="img-responsive" src="img/logo-purple.png" alt="OnEvent" style="max-height:50px"></a></h1>
+                    </div>
+                    <div class="col-md-8 col-sm-9">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar navbar-default navbar-header" role="navigation">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        </div>
+                        <nav>
+                            <ul id="Navigation" class="list-inline collapse navbar-collapse">
+                                <li><a href="#schedule" title="Schedule">Programme</a></li>
+                                <li><a href="#speakers" title="Speakers">Jury</a></li>
+                                <li><a href="#lots" title="Speakers">Lots</a></li>
+                                <li><a href="#partners" title="Partners">Partenaires</a></li>
+                                <li><a href="#faq" title="FAQ">FAQ</a></li>
+                                <li><a href="#venue" title="Venue">Plan</a></li>
+                                <li><a href="#footer" title="Subscribe to Our Newsletter">Inscription</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- end col-md-10 -->
+                </div>
+                <!--end-row-->
+            </div>
+            <!-- end navigation -->
+        </div>
+        <!-- end container -->
+    </header>
+    <div id="event-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- begin carousel-slide -->
+            <div class="item active"> <img src="img/slider/hh-opendata-two.jpg" alt="slide" class="img-responsive"> </div>
+            <!-- end carousel-slide -->
+            <!-- begin carousel-slide -->
+            <div class="item"> <img src="img/slider/hh-opendata-one.jpg" alt="slide" class="img-responsive"> </div>
+            <!-- end carousel-slide -->
+            <!-- begin carousel-slide -->
+            <div class="item"> <img src="img/slider/hh-opendata-three.jpg" alt="slide" class="img-responsive"> </div>
+            <!-- end carousel-slide -->
+        </div>
+        <!-- end carousel-inner -->
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#event-slider" data-slide="prev"> <i class="fa fa-chevron-left"></i></a>
+        <a class="right carousel-control" href="#event-slider" data-slide="next"> <i class="fa fa-chevron-right"></i></a>
+    </div>
+</section>
+<!-- end HEADER -->
+
+<!--BEGIN-INTRO-BOX-->
+<section id="intro" class="page-block">
+    <div class="container">
+        <div class="section">
+            <header class="page-head clearfix">
+                <div class="row">
+                    <div class="col-md-10 col-sm-12 text-right">
+                        <div class="venue text-left">
+                            <h2>HackHours #3</h2>
+                            <p class="text-muted">Hôtel du Département - Rouen</p>
+                        </div>
+                        <div class="countdown styled"></div>
+                    </div>
+                    <div class="col-md-2 col-sm-12 text-center"> <a href="https://www.eventbrite.fr/e/billets-hackathon-open-data-76-10485316865" title="S'inscire à l'évènement" class="btn register-trigger"><i class="fa fa-plus-circle"></i> S'inscrire</a>
+                        <h3 class="regHeading">S'inscrire à <span>L' évènement</span></h3>
+
+                    </div>
+                </div>
+                <!--end-row-->
+            </header>
+            <article>
+                <h3>Open <span>Data</span></h3>
+                <p>Le 11 et 12 avril, aura lieu l'édition #3 de HackHours. Pendant 24h, développeurs, designers et chefs de projets vont développer, en équipes, des applications innovantes. Pour ce nouvel opus, l'Open Data est mis à l'honneur.  </p>
+            </article>
+        </div>
+        <!--end-section-->
+    </div>
+</section>
+<!--END-INTRO-BOX-->
+
+<!--BEGIN-SCHEDULE-->
+<section id="schedule" class="page-block">
+    <div class="container">
+        <div class="section no-padding clearfix">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs clearfix">
+                <li class="active">
+                    <a href="#event-schedule" data-toggle="tab"><i class="fa fa-clock-o"></i>
+                        <h5>Programme <small>11 & 12 Avril</small></h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#event-gallery" data-toggle="tab"><i class="fa fa-picture-o"></i>
+                        <h5>Gallerie Photos<small>Edition #1 & #2</small></h5>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="event-schedule">
+                    <h3><i class="fa fa-clock-o"></i><span>24h</span> non-stop</h3>
+
+                    <div class="row clearfix">
+
+                        <div class="col-md-6 col-sm-12 schedule-box">
+                            <h6 class="section-head"><span>11 Avril </span> 2014</h6>
+                            <ul class="activities">
+                                <li>
+                                    <h6><strong>17:30 </strong> - Accueil des participants </h6>
+                                    <p>Entrée Cour Clémenceau. Présentation des billets et remise des badges.</p>
+                                </li>
+                                <li>
+                                    <h6><strong>18:15 </strong> - Discours </h6>
+                                    <p>Discours du président du département. Présentation du Hackaton.</p>
+                                </li>
+                                <li>
+                                    <h6><strong>18:45 pm</strong> - Formation des équipes </h6>
+                                    <p>Création des équipes.</p>
+                                </li>
+                                <li>
+                                    <h6><strong>20:00 pm</strong> - Dîner </h6>
+                                    <p>Prendre des forces pour une nuit de code.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 schedule-box">
+                            <h6 class="section-head"><span>12 Avril</span> 2014</h6>
+                            <ul class="activities">
+                                <li>
+                                    <h6><strong>08:30</strong> - Petit-déjeunez </h6>
+                                    <p>Pensez à préparer vos présentations.</p>
+                                </li>
+                                <li>
+                                    <h6><strong>12:30 pm</strong> - Déjeunez </h6>
+                                    <p>Buffet</p>
+                                </li>
+                                <li>
+                                    <h6><strong>17:50</strong> - Ouverture au public </h6>
+                                    <p>Entrée Cour Clémenceau. </p>
+                                </li>
+                                <li>
+                                    <h6><strong>18:00</strong> - Présentations </h6>
+                                    <p>Vous aurez 5min pour présenter votre projet sur scène.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!--end-of-row-->
+                </div>
+                <!--end-event-schedule-content-->
+
+                <!--end-event-schedule-content-->
+
+                <div class="tab-pane" id="event-gallery">
+                    <h3><i class="fa fa-picture-o"></i> Event <span>Gallery</span></h3>
+
+                    <div class="img-grid clearfix">
+                        <ul id="eg-thumbs" class="eg-thumbs clearfix">
+                            <li>
+                                <a href="img/gallery/large/01.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/01.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>Lancement #OpenData76</span></div></a>
+                            </li>
+                            <li>
+                                <a href="img/gallery/large/02.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/02.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>HackHours #2</span></div></a>
+                            </li>
+                            <li>
+                                <a href="img/gallery/large/03.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/03.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>HackHours #2</span></div></a>
+                            </li>
+                            <li>
+                                <a href="img/gallery/large/04.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/04.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>HackHours #2</span></div></a>
+                            </li>
+                            <li>
+                                <a href="img/gallery/large/05.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/05.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>HackHours #2</span></div></a>
+                            </li>
+                            <li>
+                                <a href="img/gallery/large/06.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/06.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>HackHours #2</span></div></a>
+                            </li>
+                            <li>
+                                <a href="img/gallery/large/07.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/07.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>HackHours #2</span></div></a>
+                            </li>
+                            <li>
+                                <a href="img/gallery/large/08.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="img/gallery/thumb/08.jpg" alt="Event Photo" class="img-responsive">
+                                    <div class="img-caption"><span>HackHours #1</span></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end-img-grid-->
+
+                </div>
+                <!--end-event-schedule-content-->
+
+
+                <!--end-event-schedule-content-->
             </div>
         </div>
-        <div class="laphoto-event">
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <div class="laphoto"></div>
+    </div>
+</section>
+<!--END-SCHEDULE-->
+
+<!--BEGIN-SPEAKERS-->
+<section id="speakers" class="page-block">
+    <div class="container">
+        <div class="section clearfix bottom-margin">
+            <header class="page-head colored clearfix">
+                <h2>Jury</h2>
+                <p class="text-muted">Présentation du jury </p>
+            </header>
+            <article>
+                <p><div class="col-md-12 col-sm-12 text-center">
+                <form id="register" method="post">
+                    <div class="field-wrapper">
+                        <div class="form-row">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" />
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre téléphone" />
+                        </div>
+                        <div class="form-row">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" />
+                        </div>
+                        <div class="form-row clearfix">
+                            <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Commentaires"></textarea>
+                        </div>
+                        <input type="submit" value="Envoyer" class="btn btn-custom btn-lg" id="submit" name="submit" />
                     </div>
-                    <div class="span12">
-                        <h5 style="color:#FFFFFF !important;">HackHours #2 @ Seine Innopolis Rouen</h5>
-                        <p>&nbsp;</p>
-                        <p style="color:#FFFFFF !important;">Retour sur l'évènement en photo : <a href="http://www.flickr.com/photos/hackhours/" style="color:#fff !important;" target="_blank">www.flickr.com/photos/hackhours/</a></p>
+                </form>
+                <a href="#" title="Register For The Jury" class="btn be-jury register-trigger"><i class="fa fa-plus-circle"></i> Etre membre du jury</a>
+            </div>
+                </p>
+            </article>
+        </div>
+        <div class="row clearfix speaker-grid">
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="section no-padding">
+                    <figure>
+                        <img src="img/speakers/speaker1.jpg" alt="Speaker" class="img-responsive" />
+                        <figcaption class="speaker-info">
+                            Président d’OpenStreetMap France (association dont l'objectif est de promouvoir le projet OpenStreetMap et notamment la collecte, la diffusion et l'utilisation de données cartographiques sous licences libres).</br>
+                            @RatZillaS
+                        </figcaption>
+                    </figure>
+                    <div class="speaker clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-9">
+                            <h6>Gaël Musquet</h6>
+                            <p>Président OpenStreetMap France</p>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row section-subtitle">
-                <h3>Les gagnants</h3>
-            </div>
-            <div class="row">
-                <div class="span12 text-center">
-                    <img src="assets/images/edition2/winners.jpg" />
+            <!--end-col-md-4-->
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="section no-padding">
+                    <figure>
+                        <img src="img/speakers/speaker2.jpg" alt="Speaker" class="img-responsive" />
+                        <figcaption class="speaker-info">
+                            Nicolas Rouly, président du département de Seine-Maritime.</br>
+                            @NicolasRouly
+                        </figcaption>
+                    </figure>
+                    <div class="speaker clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-9">
+                            <h6>Nicolas Rouly</h6>
+                            <p>Président du Département de Seine-Maritime</p>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row section-subtitle">
-                <h3>Les lots</h3>
+            <!--end-col-md-4-->
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="section no-padding">
+                    <figure>
+                        <img src="http://placehold.it/370x249/&text=Jury" alt="Speaker" class="img-responsive" />
+
+                    </figure>
+                    <div class="speaker clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-9">
+                            <h6>A venir</h6>
+                            <p>A venir</p>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="row">
-                    <div class="span3">
-                        <div class="panel panel-primary">
+            <!--end-col-md-4-->
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="section no-padding no-margin">
+                    <figure>
+                        <img src="img/speakers/speaker32.png" alt="Speaker" class="img-responsive" />
+                        <figcaption class="speaker-info">
+                            Directeur de la communication, Département de Seine-Maritime
+                        </figcaption>
+                    </figure>
+                    <div class="speaker clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-9">
+                            <h6>Vincent Lalire</h6>
+                            <p>Directeur de la communication, Département de Seine-Maritime</p>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+                    </div>
+                </div>
+            </div>
+            <!--end-col-md-4-->
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="section no-padding no-margin">
+                    <figure>
+                        <img src="http://placehold.it/370x249/&text=Jury" alt="Speaker" class="img-responsive" />
+
+                    </figure>
+                    <div class="speaker clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-9">
+                            <h6>A venir</h6>
+                            <p>A venir</br></p></br>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+                    </div>
+                </div>
+            </div>
+            <!--end-col-md-4-->
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="section no-padding no-margin">
+                    <figure>
+                        <img src="img/speakers/speaker3.png" alt="Speaker" class="img-responsive" />
+                        <figcaption class="speaker-info">
+                            Chef de projet internet, Département de Seine-Maritime
+                        </figcaption>
+                    </figure>
+                    <div class="speaker clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-9">
+                            <h6>Baptiste Dumouchel</h6>
+                            <p>Chef de projet internet, Département de Seine-Maritime</p>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+                    </div>
+                </div>
+            </div>
+            <!--end-col-md-4-->
+        </div>
+        <!--end-row-->
+
+        <!--
+         Charles Ruelle, CTO of Etalab
+         -->
+
+    </div>
+</section>
+<!--END-SPEAKERS-->
+
+<!--BEGIN-SCHEDULE-->
+<section id="lots" class="page-block">
+    <div class="container">
+        <div class="section no-padding clearfix">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs clearfix">
+                <li class="active">
+                    <a href="#lots1" data-toggle="tab"><i class="fa fa-trophy"></i>
+                        <h5>Equipe <small>#1</small></h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lots2" data-toggle="tab"><i class="fa fa-trophy"></i>
+                        <h5>Equipe <small>#2</small></h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lots3" data-toggle="tab"><i class="fa fa-trophy"></i>
+                        <h5>Equipe<small> #3</small></h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tirage-au-sort" data-toggle="tab"><i class="fa fa-gift"></i>
+                        <h5>Tirage au sort<small> #4</small></h5>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="lots1">
+                    <header class="page-head">
+                        <h3><i class="fa fa-picture-o"></i> Pour l'équipe #1 :  <span>A venir</span></h3>
+                    </header>
+                    <div class="row clearfix">
+
+
+
+
+                    </div>
+                    <!--end-of-row-->
+                </div>
+                <!--end-event-schedule-content-->
+
+                <!--end-event-schedule-content-->
+
+                <div class="tab-pane" id="lots2">
+                    <header class="page-head">
+                        <h3><i class="fa fa-picture-o"></i> Pour l'équipe #2 :  <span>A venir</span></h3>
+                    </header>
+                    <div class="row clearfix">
+
+
+
+
+                    </div>
+                    <!--end-img-grid-->
+
+                </div>
+                <!--end-event-schedule-content-->
+
+                <div class="tab-pane" id="lots3">
+                    <header class="page-head">
+                        <h3><i class="fa fa-picture-o"></i> Pour l'équipe #3 :  <span>A venir</span></h3>
+                    </header>
+                    <div class="row clearfix">
+
+
+
+
+                    </div>
+                </div>
+                <!--end-event-schedule-content-->
+
+
+                <div class="tab-pane" id="tirage-au-sort">
+                    <header class="page-head">
+                        <h3><i class="fa fa-picture-o"></i> Pour le tirage au sort :  <span>A venir</span></h3>
+                    </header>
+                    <div class="row clearfix">
+
+
+                    </div>
+                    <!--end-of-row-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BEGIN-PARTNERS-->
+<section id="partners" class="page-block">
+    <div class="container">
+        <div class="section">
+            <header class="page-head">
+                <h2>Sponsors</h2>
+                <p class="text-muted">Les partenaires et sponsors de cette édition #3.</p>
+            </header>
+            <article>
+
+            </article>
+            <div class="partner clearfix">
+                <a href="#" title="Partner Brand"> <img class="img-responsive" src="img/partners/cg.png" alt="Partner Brand" /> </a>
+                <a href="#" title="Partner Brand"> <img class="img-responsive" src="img/partners/NWX.png" alt="Partner Brand" /> </a>
+                <a href="#" title="Partner Brand"> <img class="img-responsive" src="img/partners/3.png" alt="Partner Brand" /> </a>
+                <a href="#" title="Partner Brand"> <img class="img-responsive" src="img/partners/open.png" alt="Partner Brand" /> </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--END-PARTNERS-->
+
+<!--BEGIN-FAQ-->
+<section id="faq" class="page-block">
+    <div class="container">
+        <div class="section">
+            <header class="page-head">
+                <h2>FAQ</h2>
+                <p class="text-muted">Questions & Réponses à propos de l'évènement</p>
+            </header>
+            <article class="row">
+                <div class="panel-group clearfix" id="questions">
+                    <div class="col-md-6 col-sm-12">
+
+                        <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">
-                                    #1</h3>
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question1"> 1 <span>Qu'est ce qu'un Hackathon ?</span> </a> </h4>
                             </div>
-                            <div class="panel-body">
-                                <div class="the-price">
-                                    <h1>
-                                        1er<span class="subscript"> prix du jury</span></h1>
+                            <div id="question1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Un hackathon est un évènement ou des déceloppeurs, des designers, des chefs de projet et des profils business forment des équipes afin de créer des applications innovantes.
+                                        Durant 24 à 48h ces équipes vont travailler sur un thème fixé à l'avance. A la fin, les équipes présentent leur projet devant un jury et ce dernier nomme choisit les meilleurs projets afin de leur remettre des récompenses.</p>
+                                    <p> Les hackathons (Hacker et Marathon) sont très répandus aux Etats-Unis et peuvent rassembler plusieurs centaines de passionés.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question2"> 2 <span>A qui s'adresse l'évènement ?</span> </a> </h4>
+                            </div>
+                            <div id="question2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Tout le monde est le bienvenue. Il faut cependant posséder quelques compétences dans un des domaines suivants: Développement, gestion de projet, design, business, marketing, présentation de projet.</p>
+
+                                    <p>Le niveau importe peu, les débutants sont donc les bienvenues. L'important c'est de passer un bon moment, apprendre et partager son expérience.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question3"> 3 <span>Est ce que je peux m'inscrire en équipe ?</span> </a> </h4>
+                            </div>
+                            <div id="question3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Il n'est pas obligé de venir avec une équipe ou un projet. Au début du hackathon, les porteurs de projet qui manque de co-équipers pourront monter sur scène afin de présenter leur idée et trouver des partenaires.</p>
+                                    <p>Il n'y a donc aucun problème à s'inscrire seul ou avec une équipe déja formée.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question4"> 4 <span>L'inscription est gratuite ?</span> </a> </h4>
+                            </div>
+                            <div id="question4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Oui ! Et on fournit même les repas et boissons !</p>
+                                    <p>Durant tout l'évènement vous trouverez en-cas, boissons, sucreries, café afin d'être dans les meilleurs conditions pour mener à bien votre projet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--end-of-column-6-->
+                    <div class="col-md-6 col-sm-12">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question5"> 5 <span>Où consulter les dernieres informations à propos de l'évènement ?</span> </a> </h4>
+                            </div>
+                            <div id="question5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Sur twitter (@hackhours) ou sur Facebook.</p>
+                                    <p> Vous pouvez également vous inscrire à notre newsletter en bas de cette page.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question6"> 6 <span>Combien de personnes par équipe ?</span> </a> </h4>
+                            </div>
+                            <div id="question6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Le maximum de membres par équipe est fixé à 4. Ceci pour ne pas avantager certaines équipes mais aussi pour faciliter la remise des lots pour les vainqueurs.</p>
 
                                 </div>
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            4 chromecast
-                                        </td>
-                                    </tr>
-                                    <tr class="active">
-                                        <td>
-                                            4 Raspberry starter kit
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            4 bons de 50€ Amazon
-                                        </td>
-                                    </tr>
-
-                                    <tr class="active">
-                                        <td>
-                                            4 places RHE (loges)
-                                        </td>
-                                    </tr>
-
-                                    <tr class="active">
-                                        <td>
-                                            1 compte Github Organization Silver $50/mois (pendant 1 an)
-                                        </td>
-                                    </tr>
-
-                                </table>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="span3">
-                        <div class="panel panel-success">
 
+                        <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">
-                                    #2</h3>
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question7"> 7 <span>Est ce que je dois amener mon matériel ?</span> </a> </h4>
                             </div>
-                            <div class="panel-body">
-                                <div class="the-price">
-                                    <h1>
-                                        2ème<span class="subscript"> prix du jury</span></h1>
-
+                            <div id="question7" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Oui ! Pc fixe, portable, tablette, téléphone.. Vous avez le choix mais c'est à vous de ramener votre matériel.</p>
+                                    <p>Vous aurez à votre disposition pour chaque équipe des prises de courant, une connexion internet filaire et du wifi.</p>
                                 </div>
-                                <table class="table">
-                                    <tr class="active">
-                                        <td>
-                                            4 Raspberry starter kit
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            4 bons de 50€ Amazon
-                                        </td>
-                                    </tr>
-
-                                    <tr class="active">
-                                        <td>
-                                            1 compte Github Organization Bronze $25/mois (pendant 1 an)
-                                        </td>
-                                    </tr>
-
-                                </table>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="span3">
-                        <div class="panel panel-info">
+
+                        <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">
-                                    #3</h3>
+                                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question8"> 8 <span>Concrètement, comment ça se passe un Hackathon ?</span> </a> </h4>
                             </div>
-                            <div class="panel-body">
-                                <div class="the-price">
-                                    <h1>
-                                        3eme<span class="subscript"> prix du jury</span></h1>
-
+                            <div id="question8" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Une fois les équipes formées, vous prendrez place dans la grande salle Bérégovoy (Hotel du département). Après c'est 24h de code et remue-méninges qui vous attendent.
+                                        Pendant c'est 24h vous travaillez comme vous le voulez. Des consoles de jeux seront installées pour vous détendre et le buffet sera à votre disposition durant tout l'évènement.</p>
+                                    <p>A la fin des 24h vous devrez nous remettre votre présentation (format powerpoint ou BUNKR), puis à partir de 18h, toutes les équipes passeront devant le jury et le public afin de présenter leur projet. Enfin, le jury délibère et les 3 équipes élues se voient remettre leurs récompenses. </p>
                                 </div>
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            4 places RHE (loges)
-                                        </td>
-                                    </tr>
-
-                                    <tr class="active">
-                                        <td>
-                                            1 compte Github Organization Bronze $25/mois (pendant 6 mois)
-                                        </td>
-                                    </tr>
-
-                                </table>
                             </div>
-
                         </div>
                     </div>
+                    <!--end-of-column-6-->
+                </div>
+                <!--end-of-accordion-->
 
-                    <div class="span3">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">
-                                    #4</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="the-price">
-                                    <h1>
-                                        <span class="subscript"> Tout le monde</span></h1>
+            </article>
+        </div>
+    </div>
+</section>
+<!--END-FAQ-->
 
+<!--BEGIN-VENUE-->
+<section id="venue" class="page-block">
+    <div class="container">
+        <div class="section clearfix bottom-margin">
+            <header class="page-head colored clearfix">
+                <h2>Map</h2>
+                <p class="text-muted">Trouvez votre chemin pour venir à l'évènement.</p>
+            </header>
+            <article>
+                <div id="map_canvas"></div>
+                <div class="row clearfix">
+                    <div class="col-md-3 col-sm-12 column">
+                        <div class="column-content">
+                            <h3>Lieu de  <span>l'évènement</span></h3>
+                            <ul class="address">
+                                <li>
+                                    <i class="fa fa-map-marker"></i> <strong>Visit Us</strong><br>
+                                    Hôtel du Département<br>
+                                    Quai Jean Moulin
+                                    76100 Rouen
+                                    France
+                                </li>
+                                <li>
+                                    <i class="fa fa-twitter"></i> <strong>Twitter</strong><br>
+                                    <a class="tips" href="https://twitter.com/hackhours" title="Follow Us on Twitter">@hackhours</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i> <strong>Email</strong><br>
+                                    <script type='text/javascript'>var a = new Array('rs@gmai','hackhou','l.com');document.write("<a href='mailto:"+a[1]+a[0]+a[2]+"'>"+a[1]+a[0]+a[2]+"</a>");</script>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 column directions-input">
+                        <div class="column-content">
+                            <h3>Ma <span>Direction</span></h3>
+                            <form action="/routebeschrijving" onSubmit="calcRoute();return false;" id="routeForm">
+                                <label for="routeStart"><strong>Départ:</strong></label>
+                                <input type="text" id="routeStart" value="place du général de gaulle Rouen">
+                                <label for="routeVia"><strong>Via(Optional):</strong></label>
+                                <input type="text" id="routeVia">
+                                <label>Mode de transport:</label>
+                                <div class="clearfix">
+                                    <label class="radio-option">
+                                        <input type="radio" name="travelMode" value="DRIVING" checked />
+                                        Voiture</label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="travelMode" value="BICYCLING" />
+                                        Vélo</label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="travelMode" value="TRANSIT" />
+                                        Transport en commun</label>
+                                    <label class="radio-option last">
+                                        <input type="radio" name="travelMode" value="WALKING" />
+                                        A pieds</label>
                                 </div>
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <strong>1 PS4 (tirage au sort)</strong>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            T-shirts HackHours
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Stickers HackHours
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <strong>Offres de stage et d'embauche</strong>
-                                        </td>
-                                    </tr>
-
-                                </table>
-                            </div>
-
+                                <input type="submit" value="Trouver mon chemin" class="btn btn-block">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 column directions-results">
+                        <div class="column-content">
+                            <h3>Directions</h3>
+                            <div id="directionsPanel"> Entrez <strong>une Destination</strong> dans <strong>Ma Direction</strong> et cliquez sur Trouver mon chemin. </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!--end-of-row-->
+            </article>
         </div>
+    </div>
+</section>
+<!--END-VENUE-->
 
+<!--BEGIN-FOOTER-->
+<footer id="footer" class="page-block">
+    <div class="container">
+        <div class="section no-border">
+            <header class="page-head colored clearfix">
 
+                <div class="col-md-6 col-sm-12">
+                    <h3 class="subscribeHeading">Abonnez-vous à notre newsletter</h3>
+                    <form action="http://hackhours.us6.list-manage1.com/subscribe/post?u=e800801fe9693167a14741797&id=e81a12e05e" method="post" id="subscribeForm" target="_blank">
 
-<!-- CONCEPT -->
-            
-        <a name="concept"></a>
-        <div class="container section">
-            <div class="section-title row">
-                <h2><span class="fui-eye"></span>Concept // Hackathon</h2>
-            </div>
-            <div class="row">
-                <div class="span4">
-                    <div style="text-align:center;">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             width="100px" height="87.882px" viewBox="0 0 100 87.882" enable-background="new 0 0 100 87.882" xml:space="preserve" class="svg-color">
-                        <path id="path4906" d="M99.772,23.34l-8.198,64.542H63.896L55.724,23.34h33.802L96.217,0L100,1.062l-6.401,22.265L99.772,23.34z"/>
-                        <path id="path4908" d="M51.815,60.924c0,0,1.037-9.387-13.321-9.387H15.623c-14.333,0-13.321,9.387-13.321,9.387H51.815z"/>
-                        <path id="path4910" d="M2.302,78.47c0,0-1.012,9.412,13.321,9.412h22.871c14.358,0,13.321-9.412,13.321-9.412H2.302z"/>
-                        <path id="path4912" d="M49.665,73.928c2.353,0,4.25-1.91,4.25-4.251c0-2.327-1.897-4.225-4.25-4.225H4.25
-                            C1.91,65.453,0,67.35,0,69.677c0,2.341,1.91,4.251,4.25,4.251H49.665z"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="95.139px" viewBox="0 0 100 95.139" enable-background="new 0 0 100 95.139" xml:space="preserve" class="svg-color">
-                        <polygon points="31.944,68.75 31.944,77.083 37.5,77.083 62.5,77.083 68.056,77.083 68.056,68.75 "/>
-                        <path d="M45.833,56.25c0-0.768-0.621-1.389-1.389-1.389c-0.613,0-1.117,0.402-1.301,0.954l-0.017-0.005l-2.461,7.384h-7.332  c-0.768,0-1.389,0.621-1.389,1.389s0.621,1.389,1.389,1.389h9.334l3.094-9.282l-0.017-0.006  C45.793,56.546,45.833,56.404,45.833,56.25z"/>
-                        <g>
-                            <path d="M36.111,54.861H24.146l-3.503-9.584l-0.019,0.007c-0.531-1.689-2.091-2.924-3.957-2.924c-0.67,0-1.295,0.174-1.856,0.455   l-0.007-0.014C5.257,47.574,0,58.27,0,72.917c0,2.301,1.865,4.166,4.167,4.166h12.5v13.889c0,2.302,1.865,4.167,4.167,4.167   S25,93.273,25,90.972V72.917c0-2.302-1.865-4.167-4.167-4.167H8.51c0.506-5.989,2.274-12.45,6.963-16.456l4.265,6.587l0.01-0.005   c0.457,0.91,1.388,1.541,2.475,1.541h13.889c1.534,0,2.777-1.244,2.777-2.778S37.645,54.861,36.111,54.861z"/>
-                            <circle cx="27.778" cy="39.583" r="6.25"/>
-                        </g>
-                        <path d="M66.667,63.194h-7.333l-2.461-7.384l-0.016,0.005c-0.185-0.552-0.688-0.954-1.302-0.954c-0.768,0-1.389,0.621-1.389,1.389  c0,0.154,0.04,0.296,0.088,0.434l-0.017,0.006l3.094,9.282h9.335c0.768,0,1.389-0.621,1.389-1.389S67.435,63.194,66.667,63.194z"/>
-                        <circle cx="72.223" cy="39.583" r="6.25"/>
-                        <path d="M85.197,42.801l-0.007,0.014c-0.562-0.281-1.188-0.455-1.857-0.455c-1.864,0-3.426,1.234-3.956,2.924l-0.02-0.007  l-3.503,9.584H63.889c-1.534,0-2.777,1.243-2.777,2.777s1.243,2.778,2.777,2.778h13.889c1.087,0,2.019-0.631,2.476-1.541l0.01,0.005  l4.266-6.587c4.688,4.006,6.456,10.467,6.962,16.456H79.167c-2.302,0-4.167,1.865-4.167,4.167v18.055  c0,2.302,1.865,4.167,4.167,4.167s4.166-1.865,4.166-4.167V77.083h12.5c2.302,0,4.167-1.865,4.167-4.166  C100,58.27,94.743,47.574,85.197,42.801z"/>
-                        <path d="M50,29.167c-8.042,0-14.583-6.542-14.583-14.583S41.958,0,50,0s14.583,6.542,14.583,14.583S58.042,29.167,50,29.167z   M50,2.778c-6.509,0-11.806,5.295-11.806,11.805S43.491,26.389,50,26.389s11.806-5.296,11.806-11.806S56.509,2.778,50,2.778z"/>
-                        <path d="M56.944,9.028c0-0.768-0.621-1.389-1.389-1.389c-0.386,0-0.732,0.157-0.983,0.409l-3.184,3.183V6.25  c0-0.768-0.621-1.389-1.389-1.389s-1.389,0.622-1.389,1.389v8.333c0,0.768,0.621,1.389,1.389,1.389c0.385,0,0.732-0.157,0.983-0.409  l5.553-5.551C56.788,9.76,56.944,9.412,56.944,9.028z"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="svg-color">
-                        <g>
-                            <path d="M74.757,37.876c2.541-2.101,3.692-5.598,2.608-8.923c-1.078-3.326-4.066-5.479-7.355-5.681   c0.827-3.194-0.3-6.697-3.13-8.752c-2.829-2.055-6.504-2.04-9.291-0.272c-1.206-3.069-4.177-5.243-7.675-5.243   c-3.494,0-6.471,2.174-7.677,5.236c-2.781-1.764-6.462-1.776-9.291,0.279c-2.827,2.055-3.954,5.558-3.133,8.752   c-3.286,0.202-6.275,2.355-7.353,5.684c-1.078,3.323,0.071,6.82,2.609,8.92c-2.542,2.098-3.693,5.595-2.609,8.924   c1.078,3.319,4.067,5.476,7.353,5.681c-0.821,3.19,0.306,6.7,3.136,8.749c2.826,2.055,6.507,2.046,9.291,0.272   c1.209,3.068,4.183,5.242,7.677,5.242c3.496,0,6.466-2.174,7.672-5.242c2.787,1.773,6.468,1.782,9.297-0.275   c2.824-2.052,3.951-5.556,3.13-8.749c3.289-0.205,6.278-2.358,7.355-5.687C78.449,43.471,77.298,39.971,74.757,37.876z    M49.914,56.379c-10.216,0-18.5-8.284-18.5-18.503c0-10.216,8.283-18.499,18.5-18.499c10.217,0,18.498,8.283,18.498,18.499   C68.411,48.095,60.131,56.379,49.914,56.379z"/>
-                            <path d="M33.9,64.228c0,0,3.262,1.365,7.255,0c0,0,2.523,4.306,7.251,4.306l-1.785,22.603l-9.043-9.462H23.81   L33.9,64.228z"/>
-                            <path d="M65.643,64.228c0,0-3.252,1.365-7.251,0c0,0-2.523,4.306-7.25,4.306l1.788,22.603l9.038-9.462h13.769   L65.643,64.228z"/>
-                        </g>
-                        <path d="M49.914,23.3c-8.051,0-14.574,6.525-14.574,14.576c0,8.048,6.522,14.577,14.574,14.577  c8.049,0,14.578-6.529,14.578-14.577C64.491,29.825,57.963,23.3,49.914,23.3z M55.391,45.786l-5.318-2.643l-5.194,2.875l0.873-5.871  l-4.342-4.051l5.855-0.983l2.511-5.383l2.747,5.264l5.894,0.723l-4.159,4.241L55.391,45.786z"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="span4">
-                    <div class="marketing">
-                        <h2>Repas</h2>
-                        <p>Tous les repas vous seront fournis gratuitement, du petit déjeuner au dîner, en passant par les encats.</p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="marketing">
-                        <h2>Hack</h2>
-                        <p>Vous disposerez de 28 heures pour élaborer et construire votre projet, en choisissant la technologie que vous souhaitez accompagnée des APIs les plus adaptées et utiles à votre hack.</p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="marketing">
-                        <h2>Récompenses</h2>
-                        <p>Au bout de vos 28 heures de hack, vous serez amenés à présenter votre projet devant un jury composé de plusieurs acteurs de la scène technologique régionale et nationale.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!-- SPONSORS -->
-
-        <a name="sponsors"></a>
-        <div class="container section">
-            <div class="section-title row">
-                <h2><span class="fui-heart"></span>Sponsors</h2>
-            </div>
-            <div class="row text-center">
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.seinemaritime.net/" target="_blank">
-                            <img src="assets/images/sponsors/seine-maritime.png" />
-                            <h6>Seine-Maritime</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://github.com" target="_blank">
-                            <img src="assets/images/sponsors/github.png" />
-                            <h6>Github</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://johnsbagelstation.fr" target="_blank">
-                            <img src="assets/images/sponsors/johnsbagelstation.png" />
-                            <h6>John's Bagel Station</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://cominfluence.fr" target="_blank">
-                            <img src="assets/images/sponsors/cominfluence.png" />
-                            <h6>Com'Influence</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row text-center">
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.esigelec.fr" target="_blank">
-                            <img src="assets/images/sponsors/esigelec.png" />
-                            <h6>ESIGelec</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.esigelec.fr/en/IRSEEM" target="_blank">
-                            <img src="assets/images/sponsors/irseem.png" />
-                            <h6>irseem</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://nwx.fr" target="_blank">
-                            <img src="assets/images/sponsors/nwx.png" />
-                            <h6>NWX</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.hautenormandie.fr" target="_blank">
-                            <img src="assets/images/sponsors/regionhn.png" />
-                            <h6>Haute-Normandie</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row text-center">
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="#">
-                            <img src="assets/images/sponsors/openinnov.png" />
-                            <h6>EU Open Innovation</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://bunkr.me" target="_blank">
-                            <img src="assets/images/sponsors/bunkr.png" />
-                            <h6>Bunkr</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://digiworks.fr" target="_blank">
-                            <img src="assets/images/sponsors/digiworks.png" />
-                            <h6>Digiworks</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://creativedata.fr" target="_blank">
-                            <img src="assets/images/sponsors/creativedata.png" />
-                            <h6>Creative Data</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="row text-center">
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.dwm-it.fr/" target="_blank">
-                            <img src="assets/images/sponsors/dwmit.png" />
-                            <h6>DWM'IT</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.gamit.fr/" target="_blank">
-                            <img src="assets/images/sponsors/gamit.png" />
-                            <h6>Gamit</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.kayo.fr/">
-                            <img src="assets/images/sponsors/kayo.png" />
-                            <h6>Kayo</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.pakata.fr/" target="_blank">
-                            <img src="assets/images/sponsors/pakata.png" />
-                            <h6>Pakata</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="row text-center">
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.spread-button.com/" target="_blank">
-                            <img src="assets/images/sponsors/spreadbutton.png" />
-                            <h6>Spread Button</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.siqual.fr" target="_blank">
-                            <img src="assets/images/sponsors/squal.png" />
-                            <h6>Siqual</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="#">
-                            <img src="assets/images/sponsors/innoveme.png" />
-                            <h6>Innove.me</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.seinari.fr/" target="_blank">
-                            <img src="assets/images/sponsors/seinari.png" />
-                            <h6>Seinari</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="row text-center">
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.la-crea.fr/" target="_blank">
-                            <img src="assets/images/sponsors/crea.png" />
-                            <h6>CREA</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.pizzasprint.com/" target="_blank">
-                            <img src="assets/images/sponsors/pizzasprint.png" />
-                            <h6>Pizza Sprint</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://siliconstudents.com" target="_blank">
-                            <img src="assets/images/sponsors/siliconstudent.png" />
-                            <h6>Silicon Student</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://exia.cesi.fr/" target="_blank">
-                            <img src="assets/images/sponsors/exia.png" />
-                            <h6>Exia</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <br/>
-            <div class="row text-center">
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://webaxys.fr" target="_blank">
-                            <img src="assets/images/sponsors/webaxys.png" />
-                            <h6>Webaxys</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <a class="title" href="http://www.pulseheberg.com/" target="_blank">
-                            <img src="assets/images/sponsors/pulseheberg.png" />
-                            <h6>PulseHeberg</h6>
-                        </a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="tile">
-                        <h3>Votre logo ici ?</h3>
-                        <br/>
-                        <a class="title" href="mailto:hackhour@gmail.com">
-                            <h6>Devenir sponsor</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-
-        <a id="contact"></a>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="span7">
-                        <p>&nbsp;</p>
-                        <h3>Un grand merci à toute l'équipe et aux sponsors.</h3>
-                        <p>Alexandre Autret, Vincent Beutin, Stéfan Lage, Matthieu Lucas.</p>
-                        <p><strong>Let's keep it free and awesome !</strong></p>
-                    </div>
-                    <div class="span5">
-                        <div class="footer-banner">
-                            
-                            <h2 class="footer-title">Hack Hours <small>2013</small></h2>
-                            <p class="social-links"><i class="fui-arrow-right" ></i><a href="mailto:hackhours@gmail.com">Ecrivez-nous</a></p>
-                            <p class="social-links"><i class="fui-arrow-right" ></i><a href="http://facebook.com/hackhours">Likez-nous</a></p>
-                            <p class="social-links"><i class="fui-arrow-right" ></i><a href="http://twitter.com/hackhours">Suivez-nous</a></p>
+                        <div class="form-row">
+                            <input type="email" id="emailSubscribe" name="EMAIL" class="form-control" placeholder="Email..." />
+                            <input type="submit" id="sub-submit" name="sub-submit" value="" class="" onclick="submit();"/>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </div>
-        </footer>
 
-    </body>
+                <div class="col-md-2 col-md-offset-1 col-sm-12">
+                    <h3>Social</h3>
+                    <div class="social">
+                        <ul class="list-inline">
+                            <li><a class="tips" href="https://facebook.com/hackhours" title="Follow Us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="tips" href="https://twitter.com/hackhours" title="Follow Us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="tips" href="http://www.flickr.com/photos/hackhours" title="Watch Our gallery"><i class="fa fa-flickr"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <!-- end social -->
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h3>Equipe HackHours</h3>
+                    <div class="">
+                        <ul class="list-unstyled">
+                            <li><a class="team-hh" href="https://twitter.com/lucasmatthieu" title="@lucasmathhieu">@lucasmatthieu</a></li>
+                            <li><a class="team-hh" href="https://twitter.com/alexandreautret" title="@alexandreautret">@alexandreautret</a></li>
+                            <li><a class="team-hh" href="https://twitter.com/vincentbeutin" title="@vincentbeutin">@vincentbeutin</a></li>
+                            <li><a class="team-hh" href="https://twitter.com/StefanLage" title="@StefanLage">@StefanLage</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- end social -->
+                </div>
+            </header>
+            <p class="text-center">HackHours &copy; <span class="year"></span> . Tout droits réservés. <br>
+            </p>
+            <a href="#top" class="top"><i class="fa fa-arrow-up fa-lg"></i></a>
+        </div><!--end-of-section-->
+    </div>
+</footer>
+<!--END-FOOTER-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXcRxnT485VtiEFJpNK-sIuAX8GA6kfRo&sensor=false"></script>
+<script src="js/jquery.js"></script>
+
+
+<script type="text/javascript" src="js/directions.js"></script>
+
+<script src="js/placeholders.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/onevent.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+</body>
 </html>
