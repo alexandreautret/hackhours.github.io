@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>HackHours - Countdown</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="images/favicon.ico" rel="shortcut icon">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+	<!-- IE fix for HTML5 tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+	<body>
+		<div class="border-top">
+		</div>
+		<header id="header">
+			<h1></h1>
+			<p></p>
+			<div id="logo">
+				<img id="logo_hackhours" src="assets/images/logo_white@medium.png" >
+				<img id="logo_cg" src="assets/images/LogoDepartement76.jpg" >
+			</div>
+		</header>
+		<div id="container">
+			<div id="row">
+				<div class="span6">
+					<div id="main">
+						<div id="counterContainer">
+							<div id="counter"></div>
+							<!--<div id="pre-counter"></div>-->
+						</div>
+
+						
+						<!-- Countdown dashboard start -->
+						<div id="tricky_countdown">
+							<div id="pre-counter"></div>
+							<div id="countdown_dashboard" style="font-family: 'NeutrafaceDisplay-Medium';">
+								<div>
+									<div class="dash hours_dash">
+										<!--<span class="dash_title">heures</span>-->
+										<span class="boxTrick">H</span>
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										
+									</div>
+									<span class="points">:</span>
+									<div class="dash minutes_dash">
+										<!--<span class="dash_title">minutes</span>-->
+										<span class="boxTrick">M</span>
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										
+									</div>
+									<span class="points">:</span>
+									<div class="dash seconds_dash">
+										<!--<span class="dash_title">secondes</span>-->
+										<span class="boxTrick">S</span>
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Countdown dashboard end -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery-->
+		<script src="js/jquery.min.js"></script>
+		<!-- Countdown timer and other animations -->
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/script.js"></script>
+		<!-- Countdown tricky -->
+		<script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,333 @@
+/* -------------------------------------------------------
+
+	Description: Minimal Coming Soon Page
+	Version: 1.0
+
+	HackHours
+
+------------------------------------------------------- */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 40px;
+	background-color: #000000;
+}
+
+
+
+/* ---- Header ---- */
+
+header {
+	width: 720px;
+	margin: 80px auto 0 auto;
+}
+
+header h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #272727;
+	text-shadow: 0 1px 0 #fff;
+}
+
+header p {
+	margin: 20px 0 0 3px;
+	font-size: 14px;
+	color: #272727;
+}
+
+
+.border-top{
+	width: 100%;
+	height: 5px;
+	border-top: 5px solid #1ABC9C;
+}
+
+
+/* ---- Main Area ---- */
+
+#main{
+	position: relative;
+	width: 916px;
+	height: 916px;
+	margin: -10px  auto 0 auto;;
+	background-image: url('../assets/images/background.png');
+	background-repeat: no-repeat;
+}
+
+/* ---- Counter ---- */
+
+#pre-counter{
+	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+	color:  #1ABC9C;
+	font-size: 18em;
+	top: 1.3em;
+	width: 100%;
+	margin-left: -50px;
+	margin-top: -70px;
+	text-align: center;
+}
+
+#counterContainer{
+	width: 500px;
+	height: 145px;
+	margin: 10px auto 0 auto;
+	padding-top: 370px;
+	padding-left: 103px;
+}
+
+#counter {
+	width: 500px;
+	height: 145px;
+	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+	font-size: 92px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 0 #fff;
+	overflow: hidden;
+}
+
+.countHours, .countMinutes, .countSeconds {
+	float: left;
+	width: 92px;
+	height: 138px;
+	padding-left: 26px;
+	background: #1ABC9C;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(0,0,0,.07)));
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07));
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07)); 
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07)); 
+	background-image: -o-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07));
+	background-image: linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07));
+	border: 1px solid #19b193;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow:
+		0 2px 3px 0 rgba(255,255,255,.2) inset,
+		0 2px 2px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow:
+		0 2px 3px 0 rgba(255,255,255,.2) inset,
+		0 2px 2px 0 rgba(0,0,0,.1);
+	box-shadow:
+		0 2px 3px 0 rgba(255,255,255,.2) inset,
+		0 2px 2px 0 rgba(0,0,0,.1);	
+}
+.countDays{
+	display:none;
+}
+
+.points {
+	float: left;
+	width: 20px;
+	margin: 0;
+	font-family: Georgia, serif;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 138px;
+	text-shadow: none;
+	color: #1ABC9C;
+}
+
+.position {
+	position: relative;
+	float: left;
+	width: 35px;
+	height: 92px;
+	margin: 8px 0 0 0;
+}
+
+.digit {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.boxName {
+	float: left;
+	width: 80px;
+	margin: -5px 0 0 22px;
+	font-size: 45px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.Hours { margin-left: 5px; }
+.Seconds { margin-left: 2px; }
+
+/* ---- Logo ---- */
+
+#logo{
+	width:  600px;
+    margin-top:-80px;
+    margin-left: 20px;
+}
+
+#logo_hackhours{
+
+}
+
+#logo_cg{
+	height: 120px;
+	float: right;
+}
+
+/*  */
+
+#tricky_countdown{
+	width: 500px;
+	height: 145px;
+	margin: 10px auto 0 auto;
+	padding-top: 370px;
+	padding-left: 103px;
+}
+
+#countdown_dashboard {
+	height: 916px;
+	margin: 0 auto;
+	position: relative;
+	margin-left: -10px;
+}
+
+.dash {
+	width: 130px;
+	height: 111px;
+	float: left;
+	margin-left: 5px;
+	position: relative;
+	float: left;
+	width: 92px;
+	height: 138px;
+	padding-left: 26px;
+	background: #1ABC9C;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(0,0,0,.07)));
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07));
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07)); 
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07)); 
+	background-image: -o-linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07));
+	background-image: linear-gradient(top, rgba(255,255,255,.1), rgba(0,0,0,.07));
+	border: 1px solid #19b193;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow:
+		0 2px 3px 0 rgba(255,255,255,.2) inset,
+		0 2px 2px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow:
+		0 2px 3px 0 rgba(255,255,255,.2) inset,
+		0 2px 2px 0 rgba(0,0,0,.1);
+	box-shadow:
+		0 2px 3px 0 rgba(255,255,255,.2) inset,
+		0 2px 2px 0 rgba(0,0,0,.1);	
+}
+
+.dash .digit {
+	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+	font-size: 92px;
+	float: left;
+	width: 45px;
+	text-align: center;
+	color: #ffffff;
+	position: relative;
+	margin-left: -7px;
+}
+
+.boxTrick {
+	position: absolute;
+	display: block;
+	bottom: -2px;
+	width: 100%;
+	margin-left: -25px;
+	text-align:  center;
+	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+	font-size: 45px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	
+}
+
+.dev_comment {
+	font-size: 14pt;
+	color: #777;
+	text-align: center;
+	font-style: italic;
+	margin: 40px 10px;
+}
+
+#subscribe_form {
+	position: relative;
+} 
+
+#email_field {
+	font-size: 16pt;
+	padding: 6px 10px;
+	width: 300px;
+}
+
+#subscribe_button {
+	font-size: 14pt;
+	color: #333;
+	padding: 4px 8px;
+}
+
+.copyright {
+	font-size: 9pt;
+	color: #333;
+	margin: 40px 0px;
+}
+
+.faded {
+	color: #999;
+}
+
+.form_message {
+	width: 400px;
+	padding: 10px;
+	margin: 15px auto;
+	display: none;
+}
+
+#error_message {
+	background-color: #ffe;
+	border-left: 5px solid #bb3;
+	border-right: 5px solid #bb3;
+	color: #770;
+}
+
+#info_message {
+	background-color: #f0f9ff;
+	border: 1px solid #eef;
+}
+
+#loading {
+	text-align: center;
+	margin: 10px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 60px;
+}
+#fondlogo{
+	width: 1%;
+	margin: 0 auto;
+	position: relative;
+}
+#fondlogo {
+	/*-webkit-transform: scale(150);
+	-webkit-transition: 1s;
+	-webkit-transition-delay:1s;
+	-webkit-opacity:0;
+	-webkit-transition-timing-function:ease-in;*/
+	
+}
+@-webkit-keyframes logo { 
+	from{-webkit-transform: scale(0.1);-webkit-opacity:1;} 
+	70%{-webkit-transform: scale(1);-webkit-opacity:0.7;} 
+	to{-webkit-transform: scale(2);-webkit-opacity:0;} 
+}
+#chgt div { width:900px; height: 916px;-webkit-opacity:1; background: url(../images/fond.png) no-repeat; color: #000; position: absolute; top: 0; left: 0; font-size:400px; padding-top: 200px; -webkit-animation: logo 1s ease-in 5; }
+
+/*#chgt div:first-child{-webkit-animation-delay:1s;} 
+#chgt  div:nth-child(2){-webkit-animation-delay:2s;} 
+#chgt div:nth-child(3){-webkit-animation-delay:3s;} 
+#chgt div:nth-child(4){-webkit-animation-delay:4s;} 
+#chgt div:last-child{-webkit-animation-delay:5s;}*/
