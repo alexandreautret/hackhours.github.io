@@ -111,10 +111,10 @@
                         </div>
                         <div class="countdown styled"></div>
                     </div>
-                    <div class="col-md-2 col-sm-12 text-center"> <a href="https://www.eventbrite.fr/e/billets-hackathon-open-data-76-10485316865" target="_blank" title="S'inscire à l'évènement" class="btn register-trigger"><i class="fa fa-plus-circle"></i> S'inscrire</a>
+                    <!--<div class="col-md-2 col-sm-12 text-center"> <a href="https://www.eventbrite.fr/e/billets-hackathon-open-data-76-10485316865" target="_blank" title="S'inscire à l'évènement" class="btn register-trigger"><i class="fa fa-plus-circle"></i> S'inscrire</a>
                         <h3 class="regHeading">S'inscrire à <span>L' évènement</span></h3>
 
-                    </div>
+                    </div>-->
                 </div>
                 <!--end-row-->
             </header>
@@ -136,6 +136,11 @@
             <!-- Nav tabs -->
             <ul class="nav nav-tabs clearfix">
                 <li class="active">
+                    <a href="#event-results" data-toggle="tab"><i class="fa fa-clock-o"></i>
+                        <h5>Résultats<small>Edition #3</small></h5>
+                    </a>
+                </li>
+                <li>
                     <a href="#event-schedule" data-toggle="tab"><i class="fa fa-clock-o"></i>
                         <h5>Programme <small>11 & 12 Avril</small></h5>
                     </a>
@@ -154,7 +159,23 @@
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div class="tab-pane active" id="event-schedule">
+                <div class="tab-pane active" id="event-results">
+                    <h3><i class="fa fa-clock-o"></i><span>Classement</span></h3>
+                    <div class="row clearfix">
+                        <div class="col-md-12 col-sm-12 schedule-box">
+                            <h6 class="section-head">Podium</h6>
+                            <ul id="podium" class="activities">
+                            </ul>
+                            <h6 class="section-head">Prix du Jury</h6>
+                            <ul id="jury_price" class="activities">
+                            </ul>
+                            <h6 class="section-head">Non classés</h6>
+                            <ul id="other_teams" class="activities">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="event-schedule">
                     <h3><i class="fa fa-clock-o"></i><span>24h</span> non-stop</h3>
 
                     <div class="row clearfix">
@@ -282,29 +303,29 @@
                 <h2>Jury</h2>
                 <p class="text-muted">Présentation du jury </p>
             </header>
-            <article>
+            <!--<article>
                 <p><div class="col-md-12 col-sm-12 text-center">
-                <form id="register" method="post">
-                    <div class="field-wrapper">
-                        <div class="form-row">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" />
+                    <form id="register" method="post">
+                        <div class="field-wrapper">
+                            <div class="form-row">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" />
+                            </div>
+                            <div class="form-row">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre téléphone" />
+                            </div>
+                            <div class="form-row">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" />
+                            </div>
+                            <div class="form-row clearfix">
+                                <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Commentaires"></textarea>
+                            </div>
+                            <input type="submit" value="Envoyer" class="btn btn-custom btn-lg" id="submit" name="submit" />
                         </div>
-                        <div class="form-row">
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre téléphone" />
-                        </div>
-                        <div class="form-row">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" />
-                        </div>
-                        <div class="form-row clearfix">
-                            <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Commentaires"></textarea>
-                        </div>
-                        <input type="submit" value="Envoyer" class="btn btn-custom btn-lg" id="submit" name="submit" />
+                        </form>
+                        <a href="#" title="Register For The Jury" class="btn be-jury register-trigger"><i class="fa fa-plus-circle"></i> Etre membre du jury</a>
                     </div>
-                </form>
-                <a href="#" title="Register For The Jury" class="btn be-jury register-trigger"><i class="fa fa-plus-circle"></i> Etre membre du jury</a>
-            </div>
                 </p>
-            </article>
+            </article>-->
         </div>
         <div class="row clearfix speaker-grid">
 

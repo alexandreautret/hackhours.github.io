@@ -1,0 +1,108 @@
+{
+	"results":{
+		"podium":{
+			"first":{
+				"name":"CheckTaRoute",
+				"description":"Application Android permettant de cibler les zones à risque des routes à l'aide des secousses analysées par l'accéléromètre."
+			},
+			"second":{
+				"name":"Hitchhik’R",
+				"description":"Application mobile facilitant la prise de contact entre auto-stoppeurs et conducteurs, de facon géolocalisée. Tout en identifiant des points de rencontre sécurisés."
+			},
+			"third":{
+				"name":"Culturovore",
+				"description":"Site web qui facilite l'utilisation du chéquier Pass'Culture en regroupant les informations et lieux ou il peut être utilisé."
+			}
+		},
+		"fourth":{
+			"name":"BatiCite",
+			"description":"Site web géolocalisant les projets d'urbanisme et des travaux engagés par les collectivités, tout en informant l'état d'avancement de ceux-ci et leurs coûts."
+		},
+		"other_teams":[
+			{
+				"name":"Balade",
+				"description":""
+			},
+			{
+				"name":"business-MAP",
+				"description":""
+			},
+			{
+				"name":"Circuit Normand",
+				"description":""
+			},
+			{
+				"name":"CultureFinder",
+				"description":""
+			},
+			{
+				"name":"Cycle, Seine & Sun",
+				"description":""
+			},
+			{
+				"name":"DatAmount",
+				"description":""
+			},
+			{
+				"name":"Dattle",
+				"description":""
+			},
+			{
+				"name":"Evènement Seine",
+				"description":""
+			},
+			{
+				"name":"Isiko",
+				"description":""
+			},
+			{
+				"name":"MediMap",
+				"description":""
+			},
+			{
+				"name":"NormandBiz",
+				"description":""
+			},
+			{
+				"name":"Nowledge",
+				"description":""
+			},
+			{
+				"name":"Open Democratie",
+				"description":""
+			},
+			{
+				"name":"Otougo",
+				"description":""
+			},
+			{
+				"name":"Rentr'en Car",
+				"description":""
+			},
+			{
+				"name":"Seine-aux-infos",
+				"description":""
+			},
+			{
+				"name":"Seino'vélo",
+				"description":""
+			},
+			{
+				"name":"Senior76.fr",
+				"description":""
+			},
+			{
+				"name":"Skrounch",
+				"description":""
+			},
+			{
+				"name":"tartetat.in",
+				"description":""
+			},
+			{
+				"name":"Véloroutes76",
+				"description":""
+			}
+		]
+	}
+}

@@ -200,7 +200,27 @@ $(document).ready(function() {
 	var transColor = "rgba("+match[1] + ', ' + match[2] + ', ' + match[3]+", 0.9)";
 	$('figcaption').css("background-color", transColor);
 	  
-	  
+	// Load Results of 3rd Edition
+	$.getJSON("js/json/results_edition3.json", function(data) {
+		// Podium
+		var first 	= data.results.podium.first;
+		var second 	= data.results.podium.second;
+		var third 	= data.results.podium.third;
+		$('#podium').append('<li><h6>1# <strong>'+first.name+'</strong></h6><p>'+first.description+'</p></li>');
+		$('#podium').append('<li><h6>2# <strong>'+second.name+'</strong></h6><p>'+second.description+'</p></li>');
+		$('#podium').append('<li><h6>3# <strong>'+third.name+'</strong></h6><p>'+third.description+'</p></li>');
+
+		// Jury's price
+		var fourth 	= data.results.fourth;
+		$('#jury_price').append('<li><h6>4# <strong>'+fourth.name+'</strong></h6><p>'+fourth.description+'</p></li>');
+
+		// Other teams
+		var other_teams = data.results.other_teams;
+		for(var i in data.results.other_teams){
+			var other_team = other_teams[i];
+			$('#other_teams').append('<li><h6><strong>'+other_team.name+'</strong></h6></li>');
+		}
+	});
 });
 
 
