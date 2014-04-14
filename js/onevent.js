@@ -274,10 +274,11 @@ $(document).ready(function() {
 
 		// Other teams
 		var other_teams = data.results.other_teams;
+		var mid_array 	= Math.round(data.results.other_teams.length/2);
 		for(var i in data.results.other_teams){
-			var other_team = other_teams[i];
-			var div_name = '';
-			if(i < 11)
+			var other_team 	= other_teams[i];
+			var div_name 	= '';
+			if(i < mid_array)
 				// 11th first in left column
 				div_name = '#other_teams_1';
 			else
