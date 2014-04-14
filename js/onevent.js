@@ -201,7 +201,7 @@ $(document).ready(function() {
 	$('figcaption').css("background-color", transColor);
 	  
 	// Load Results of 3rd Edition
-	$.getJSON("js/json/results_edition3.json", function(data) {
+	$.getJSON("./js/json/results_edition3.json", function(data) {
 		// Podium
 		var first 	= data.results.podium.first;
 		var second 	= data.results.podium.second;
