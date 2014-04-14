@@ -206,6 +206,7 @@ $(document).ready(function() {
 		var first 	= data.results.podium.first;
 		var second 	= data.results.podium.second;
 		var third 	= data.results.podium.third;
+		// First
 		$('#podium').append('<li>'
 								+'<h4 class="panel-title">'
 									+'<a data-toggle="collapse" data-parent="#questions" href="#description_first">'
@@ -219,6 +220,7 @@ $(document).ready(function() {
 									+'</div>'
 								+'</div>'
 							+'</li>');
+		// Second
 		$('#podium').append('<li>'
 								+'<h4 class="panel-title">'
 									+'<a data-toggle="collapse" data-parent="#questions" href="#description_second">'
@@ -232,6 +234,7 @@ $(document).ready(function() {
 									+'</div>'
 								+'</div>'
 							+'</li>');
+		// Third
 		$('#podium').append('<li>'
 								+'<h4 class="panel-title">'
 									+'<a data-toggle="collapse" data-parent="#questions" href="#description_third">'
@@ -245,6 +248,7 @@ $(document).ready(function() {
 									+'</div>'
 								+'</div>'
 							+'</li>');
+
 		// Jury's price
 		var fourth 	= data.results.fourth;
 		$('#jury_price').append('<li>'
@@ -265,7 +269,6 @@ $(document).ready(function() {
 		var other_teams = data.results.other_teams;
 		for(var i in data.results.other_teams){
 			var other_team = other_teams[i];
-			//$('#other_teams').append('<li><h6><strong>'+other_team.name+'</strong></h6><h6>'+other_team.members+'</h6></li>');
 			$('#other_teams').append('<li>'
 								+'<h4 class="panel-title">'
 									+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'

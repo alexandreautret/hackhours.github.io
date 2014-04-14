@@ -4,129 +4,129 @@
 			"first":{
 				"name":"CheckTaRoute",
 				"members": "Angelo Carlier, Simon Wallon, Nathan Malo, Alexandre Brehmer",
-				"description":"Application Android permettant de cibler les zones à risque des routes à l'aide des secousses analysées par l'accéléromètre."
+				"description":"Ce projet invite l'utilisateur à générer des données à croiser avec open data via son smartphone Android afin de tenir à jour une carte de l'état des routes de la région. L'utilisateur peut envoyer ces données via un seul clic, et accéder à la carte interactive de l'état des routes."
 			},
 			"second":{
 				"name":"Hitchhik’R",
 				"members": "Baptiste Courbe, Jérémy Guillon, Stéphane Renault",
-				"description":"Application mobile facilitant la prise de contact entre auto-stoppeurs et conducteurs, de facon géolocalisée. Tout en identifiant des points de rencontre sécurisés."
+				"description":"Une application qui révolutionne l'auto-stop ! Elle rend l'auto-stop plus moderne en affichant sur une carte les auto-stoppeurs et leur direction, permettant ainsi à un conducteur de les prendre en passant ou pas. De plus lorsqu'un conducteur est dans les environs proches de l'auto-stoppeur alors une notification lui demande s'il souhaite le prendre. Dans ce cas, un système de crédits le valorise. "
 			},
 			"third":{
 				"name":"Culturovore",
 				"members": "Marc Bellêtre, Michael J Capperon, Kenny Lavisse, Jérémy Leroy",
-				"description":"Site web qui facilite l'utilisation du chéquier Pass'Culture en regroupant les informations et lieux ou il peut être utilisé."
+				"description":"À l'aide des données des établissements qui acceptent le pass culture, nous avons créé une application web multisupports. Il sera alors possible de les localiser et de rassembler des information diverses. Application web à destination des collegiens"
 			}
 		},
 		"fourth":{
 			"name":"BatiCite",
 			"members": "Youness Belmekhfi, Arnaud Faucon, Thomas Malandain, Florian Pasque",
-			"description":"Site web géolocalisant les projets d'urbanisme et des travaux engagés par les collectivités, tout en informant l'état d'avancement de ceux-ci et leurs coûts."
+			"description":"Application Web sur le développement urbain permettant à la collectivité de mettre a disposition  les différents projets d'une ville pour les citoyens."
 		},
 		"other_teams":[
 			{
 				"name":"Balade",
 				"members": "Axel Banal, Maxime Cattet, Seije Fouquet, Romain Paget",
-				"description":""
+				"description":"Balade est une application qui, en géolocalisant l'utilisateur, va pouvoir lui proposer de visiter des lieux culturels, touristique, commerciaux se trouvant en Haute-Normandie et ensuite lui générer un itinéraire intelligent qui va lui permettre de visiter, chacun leurs tours, tous ces lieux (grâce notamment à l'Open Data 76). En lançant l'application, l'utilisateur va tomber sur un compteur qui va lui permettre de choisir un périmètre de recherche (en km), la prochaine page sera réservée aux préférences de celui-ci, à savoir : Manger, Arts, Café, Shopping, Tourisme, Extérieur, Vie Nocturne. Ensuite l'utilisateur aura le choix de créer sa propre liste de lieux ou faire confiance à l'application qui, de façon aléatoire, va générer une liste de lieux (en prenant toujours en compte le périmètre choisi). En dernier lieu, l'application générera un itinéraire permettant à l'utilisateur de se rendre dans chaque lieux et enfin revenir à son point de départ (ou non). En guise de bonus, chaque lieu aura sa fiche 'En savoir plus' composé de son nom, du type de lieu, d'une adresse et d'un numéro de téléphone. L'objectif de cette application étant de faciliter l'accès à la culture et  mettre en avant le potentiel touristique de la région, et ce de façon ludique, que ce soit pour des touristes ou des habitants de la région."
 			},
 			{
 				"name":"business-MAP",
 				"members": "Miguel Felipe, Vincent Pecquerie",
-				"description":""
+				"description":"Ce site web a pour but de vous trouver un emplacement stratégique et efficace pour votre éventuelle entreprise. Si vous hésitez sur l’emplacement, plusieurs critères seront disponible après vous être identifié. Ensuite, en fonction des résultats de votre demande, les sites envisageable seront affichés."
 			},
 			{
 				"name":"Circuit Normand",
 				"members": "Romain Broca, Clement Giguekl, Mickael Hurier",
-				"description":""
+				"description":"Proposer à l’utilisateur un circuit pour un tour en Haute-Normandie passant par des lieux culturels, selon les critères qu’il aura sélectionnés."
 			},
 			{
 				"name":"CultureFinder",
 				"members": "Alexis Avenel, Bryan Mercier, Pierre-Olivier Richard, Romain Richard",
-				"description":""
+				"description":"C'est une application web qui sera installée sur des bornes dans des offices de tourisme, des maries, ou encore des lieux à haute fréquentation. Elle permettra à un utilisateur de pouvoir retrouver sur un carte (Google Maps) des points suivant des catégories choisies auparavant tel que les aires de covoiturages, les médiathèques, les musée et autres..."
 			},
 			{
 				"name":"Cycle, Seine & Sun",
 				"members": "Yoann Chasme, Lou Hamonic, Maxime Salles, Tobias Schmidbauer",
-				"description":""
+				"description":"En utilisant notre site web, les utilisateurs doivent être capables de connaître les itinéraires cyclabes et préparer une randonnée à vélo à travers la Seine-Maritime."
 			},
 			{
 				"name":"DatAmount",
 				"members": "Antoine Bidault, Benjamin Binet, Benjamin Tournache",
-				"description":""
+				"description": "Site Internet de consultation des Open Data par profil d'internaute avec croisements de données (Wikipedia,Allociné,...). Le système est basé sur un système de géolocalisation, les données sont affichées sous forme de cartes utilisant des flux d'Open Data 76 + Data.Gouv.fr."
 			},
 			{
 				"name":"Dattle",
 				"members": "Raphaël Bacco, Mathieu Langlois, Olivier Martineau",
-				"description":""
+				"description":"Vulgariser et ouvrir l'OpenData à tous par le jeux. Avec Dattle devenez citoyen d'honneur des communes de Seine-Maritime en répondant à nos quizz issus des OpenData. Affrontez les autres Dattlers en multijoueur asynchrone et devenez le plus respecté des Seinomarins !"
 			},
 			{
 				"name":"Evènement Seine",
 				"members": "Selim Benchaa, Jordan Boitrelle, Kevin Jue, Thibault Lavoisey",
-				"description":""
+				"description":"Evènement Seine permet  d’obtenir et de recevoir des informations sur les divers concerts disponibles à Rouen et sa région pour faciliter vos sorties dans le département de la Seine-Maritime. Créer et renforcer les liens sociaux entre seinomarins, promouvoir la culture et développer l’économie du département. "
 			},
 			{
 				"name":"Isiko",
 				"members": "Gérôme Goubert, Grégory Lefèvre, Cédric Munsch, Robin Szylobryt",
-				"description":""
+				"description":"Promouvoir les lieux culturels à travers une application mobile ludique."
 			},
 			{
 				"name":"MediMap",
 				"members": "Thibault Barske, Pierre Feray-Ferrand, Maxime Meganck, Gwenael Sénéchal",
-				"description":""
+				"description":"Notre idée est de pouvoir réunir sur une carte les points d'intérêt liés à la santé (et à l'action rapide), nous avons ainsi indiquer sur une carte les défibrillateurs mis en place par la Région, les hôpitaux et pharmacies ainsi que les numéros de secours et les premiers gestes de secours. Nous avons réaliser notre projet sous forme de site web pour une utilisation sur un téléphone mobile (nous aurions préféré une application smartphone, mais nos compétences dans ce domaine étaient bien trop limités pour réaliser cela.)"
 			},
 			{
 				"name":"NormandBiz",
 				"members": "Sophie Herscovici, Cédric Joublot, Nelly Nguedjio, Edmond Takou",
-				"description":""
+				"description":"Une application internet destinée aux entrepreneurs dans le but de leur permettre de cibler la meilleure ville où exercer leurs activités en tenant compte de plusieurs paramètres (public visé, concurrence, accessibilité de la zone, ...)."
 			},
 			{
 				"name":"Nowledge",
 				"members": "Steven Ankri, Arthur Grandgerard, Guillaume Le Mière, Mathéo Raveux",
-				"description":""
+				"description":"NOWLEDGE bouleverse les règles de l'accès à la culture en lançant l'office du tourisme 3.0 en Seine Maritime. L'objectif, parer à la baisse de fréquentation des lieux culturels et à la hausse des relations virtuelles. L'application fait défiler des activités sur plusieurs critères, dont la géolocalisation, la mobilité et les horaires. L'utilisateur doit indiquer s'il les apprécie ou non. Lorsque l'attraction se fait, la sélection s'enregistre automatiquement dans l'agenda culturel. Tout est alors mis à la disposition du visiteur pour lui offrir le meilleur suivi virtuel vers le lieu sélectionné, quelque soit son mode de transport ou son état de santé."
 			},
 			{
 				"name":"Open Democratie",
 				"members": "Remi Boulier, Jeremie Legrand, Lua Marchetto, Benjamin Petit",
-				"description":""
+				"description":"Application iOS pour impliquer les citoyens dans la politique locale."
 			},
 			{
 				"name":"Otougo",
 				"members": "Matthieu Chevrier, Jean Christophe Fossati, Florian Gomis, Christophe Pamart",
-				"description":""
+				"description":"Application Web qui aide les déplacement en affichant un maximum d'informations utiles pour la mobilité."
 			},
 			{
 				"name":"Rentr'en Car",
 				"members": "Bertrand Bordage, Joseph Devarenne, Yoann Ono Dit Biot, Jean François Vo",
-				"description":""
+				"description":"Nous avons concentré nos efforts sur la création d'une architecture permettant d'agréger plusieurs sources d'informations facilement et notamment les cars de la Seine Maritime. Ainsi nous espérons favoriser les déplacements grâce aux transports en communs régionaux.  Ce service permet de trouver facilement les transports les plus proches pour accéder à la destination de son choix, et de voir en direct la localisation des différents transports sur le territoire normand."
 			},
 			{
 				"name":"Seine-aux-infos",
 				"members": "Bryan Daniel, Yassine Gremny, Tongtong Jiang, Antoine Thierry",
-				"description":""
+				"description":"Élaboration d'un outils collaboratif ayant pour but, de réalisé une évaluation.En récoltant des avis et les intérêts de la population sur un territoire et pour ses administrer."
 			},
 			{
 				"name":"Seino'vélo",
 				"members": "Jim Caignard, David Groult, Margaux Letellier, Laïla Oubaïta",
-				"description":""
+				"description":"Application mobile pour les pistes cyclables et véloroutes de seine maritime. Cette application permettra de découvrir le patrimoine naturel et culturel du département à vélo."
 			},
 			{
 				"name":"Senior76.fr",
 				"members": "Thomas Ferney, Arnaud Lemercier, Maxime Mauchaussée, Maxime Tanésie",
-				"description":""
+				"description":"Les seinomarins confrontés aux difficultés liées à l'age ont aujourd'hui accès à plusieurs aides et services proposés par de nombreux acteurs. La plate-forme SENIOR76.fr a pour ambition de simplifier l'accès à l'information destinée aux personnes âgées ainsi qu'à leurs proches. C'est pourquoi SENIOR76.fr propose une interface adaptée à ces personnes, leur permettant de trouver facilement des renseignements personnalisés."
 			},
 			{
 				"name":"Skrounch",
 				"members": "Kevin Cauchois, Armand Charbonnier, Jonathan Lemonsu, Tony Schoener",
-				"description":""
+				"description":"Skrounch est une application qui mange vos fichiers de données ouvertes 'OpenData-27-76', les digères tranquillement, et vous les rends visuellement plus agréable. Déposez votre fichier pour nourrir Skrounch"
 			},
 			{
 				"name":"tartetat.in",
 				"members": "Antoine Augusti, Étienne Batise, Thibaud Dauce, Merlin Nimier-David",
-				"description":""
+				"description":"Vous avez du temps devant vous ? Nous vous proposons des lieux à visiter dans la région."
 			},
 			{
 				"name":"Véloroutes76",
 				"members": "Bertrand Heuillard, Maxime Lentz, Thibault Palier",
-				"description":""
+				"description":"Baladez-vous sur les véloroutes de Haute-Normandie, et découvrez le patrimoine de votre région proche de vous grâce à des photos proposées par l'application !"
 			}
 		]
 	}
