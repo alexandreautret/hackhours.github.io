@@ -275,6 +275,7 @@ $(document).ready(function() {
 		// Other teams
 		var other_teams = data.results.other_teams;
 		var mid_array 	= Math.round(data.results.other_teams.length/2);
+		alert(mid_array);
 		for(var i in data.results.other_teams){
 			var other_team 	= other_teams[i];
 			var div_name 	= '';
