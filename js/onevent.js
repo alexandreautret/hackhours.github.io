@@ -274,7 +274,7 @@ $(document).ready(function() {
 										+'<p>'+third.description+'</p>'
 									+'</div>'
 								+'</div>'
-							+'</div>');
+							+'</div>'); 
 		// Jury's price
 		var fourth 	= data.results.fourth;
 		$('#jury_price').append('<div class="panel panel-default">'
