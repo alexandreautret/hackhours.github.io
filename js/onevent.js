@@ -206,19 +206,79 @@ $(document).ready(function() {
 		var first 	= data.results.podium.first;
 		var second 	= data.results.podium.second;
 		var third 	= data.results.podium.third;
-		$('#podium').append('<li><h6>1# <strong>'+first.name+'</strong></h6><h6>'+first.members+'</h6><p>'+first.description+'</p></li>');
-		$('#podium').append('<li><h6>2# <strong>'+second.name+'</strong></h6><h6>'+second.members+'</h6><p>'+second.description+'</p></li>');
-		$('#podium').append('<li><h6>3# <strong>'+third.name+'</strong></h6><h6>'+third.members+'</h6><p>'+third.description+'</p></li>');
-
+		$('#podium').append('<li>'
+								+'<h4 class="panel-title">'
+									+'<a data-toggle="collapse" data-parent="#questions" href="#description_first">'
+										+'<h6>1# <strong>'+first.name+'</strong></h6>'
+										+'<span>'+first.members+'</span>'
+									+'</a>'
+								+'</h4>'
+								+'<div id="description_first" class="panel-collapse collapse">'
+									+'<div class="panel-body">'
+										+'<p>'+first.description+'</p>'
+									+'</div>'
+								+'</div>'
+							+'</li>');
+		$('#podium').append('<li>'
+								+'<h4 class="panel-title">'
+									+'<a data-toggle="collapse" data-parent="#questions" href="#description_second">'
+										+'<h6>2# <strong>'+second.name+'</strong></h6>'
+										+'<span>'+second.members+'</span>'
+									+'</a>'
+								+'</h4>'
+								+'<div id="description_second" class="panel-collapse collapse">'
+									+'<div class="panel-body">'
+										+'<p>'+second.description+'</p>'
+									+'</div>'
+								+'</div>'
+							+'</li>');
+		$('#podium').append('<li>'
+								+'<h4 class="panel-title">'
+									+'<a data-toggle="collapse" data-parent="#questions" href="#description_third">'
+										+'<h6>3# <strong>'+third.name+'</strong></h6>'
+										+'<span>'+third.members+'</span>'
+									+'</a>'
+								+'</h4>'
+								+'<div id="description_third" class="panel-collapse collapse">'
+									+'<div class="panel-body">'
+										+'<p>'+third.description+'</p>'
+									+'</div>'
+								+'</div>'
+							+'</li>');
 		// Jury's price
 		var fourth 	= data.results.fourth;
-		$('#jury_price').append('<li><h6>4# <strong>'+fourth.name+'</strong></h6><h6>'+fourth.members+'</h6><p>'+fourth.description+'</p></li>');
+		$('#jury_price').append('<li>'
+								+'<h4 class="panel-title">'
+									+'<a data-toggle="collapse" data-parent="#questions" href="#description_fourth">'
+										+'<h6>4# <strong>'+fourth.name+'</strong></h6>'
+										+'<span>'+fourth.members+'</span>'
+									+'</a>'
+								+'</h4>'
+								+'<div id="description_fourth" class="panel-collapse collapse">'
+									+'<div class="panel-body">'
+										+'<p>'+fourth.description+'</p>'
+									+'</div>'
+								+'</div>'
+							+'</li>');
 
 		// Other teams
 		var other_teams = data.results.other_teams;
 		for(var i in data.results.other_teams){
 			var other_team = other_teams[i];
-			$('#other_teams').append('<li><h6><strong>'+other_team.name+'</strong></h6><h6>'+other_team.members+'</h6></li>');
+			//$('#other_teams').append('<li><h6><strong>'+other_team.name+'</strong></h6><h6>'+other_team.members+'</h6></li>');
+			$('#other_teams').append('<li>'
+								+'<h4 class="panel-title">'
+									+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'
+										+'<h6><strong>'+other_team.name+'</strong></h6>'
+										+'<span>'+other_team.members+'</span>'
+									+'</a>'
+								+'</h4>'
+								+'<div id="description_'+i+'" class="panel-collapse collapse">'
+									+'<div class="panel-body">'
+										+'<p>'+other_team.description+'</p>'
+									+'</div>'
+								+'</div>'
+							+'</li>');
 		}
 	});
 });
