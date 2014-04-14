@@ -3,104 +3,129 @@
 		"podium":{
 			"first":{
 				"name":"CheckTaRoute",
+				"members": "Angelo Carlier, Simon Wallon, Nathan Malo, Alexandre Brehmer",
 				"description":"Application Android permettant de cibler les zones à risque des routes à l'aide des secousses analysées par l'accéléromètre."
 			},
 			"second":{
 				"name":"Hitchhik’R",
+				"members": "Baptiste Courbe, Jérémy Guillon, Stéphane Renault",
 				"description":"Application mobile facilitant la prise de contact entre auto-stoppeurs et conducteurs, de facon géolocalisée. Tout en identifiant des points de rencontre sécurisés."
 			},
 			"third":{
 				"name":"Culturovore",
+				"members": "Marc Bellêtre, Michael J Capperon, Kenny Lavisse, Jérémy Leroy",
 				"description":"Site web qui facilite l'utilisation du chéquier Pass'Culture en regroupant les informations et lieux ou il peut être utilisé."
 			}
 		},
 		"fourth":{
 			"name":"BatiCite",
+			"members": "Youness Belmekhfi, Arnaud Faucon, Thomas Malandain, Florian Pasque",
 			"description":"Site web géolocalisant les projets d'urbanisme et des travaux engagés par les collectivités, tout en informant l'état d'avancement de ceux-ci et leurs coûts."
 		},
 		"other_teams":[
 			{
 				"name":"Balade",
+				"members": "Axel Banal, Maxime Cattet, Seije Fouquet, Romain Paget",
 				"description":""
 			},
 			{
 				"name":"business-MAP",
+				"members": "Miguel Felipe, Vincent Pecquerie",
 				"description":""
 			},
 			{
 				"name":"Circuit Normand",
+				"members": "Romain Broca, Clement Giguekl, Mickael Hurier",
 				"description":""
 			},
 			{
 				"name":"CultureFinder",
+				"members": "Alexis Avenel, Bryan Mercier, Pierre-Olivier Richard, Romain Richard",
 				"description":""
 			},
 			{
 				"name":"Cycle, Seine & Sun",
+				"members": "Yoann Chasme, Lou Hamonic, Maxime Salles, Tobias Schmidbauer",
 				"description":""
 			},
 			{
 				"name":"DatAmount",
+				"members": "Antoine Bidault, Benjamin Binet, Benjamin Tournache",
 				"description":""
 			},
 			{
 				"name":"Dattle",
+				"members": "Raphaël Bacco, Mathieu Langlois, Olivier Martineau",
 				"description":""
 			},
 			{
 				"name":"Evènement Seine",
+				"members": "Selim Benchaa, Jordan Boitrelle, Kevin Jue, Thibault Lavoisey",
 				"description":""
 			},
 			{
 				"name":"Isiko",
+				"members": "Gérôme Goubert, Grégory Lefèvre, Cédric Munsch, Robin Szylobryt",
 				"description":""
 			},
 			{
 				"name":"MediMap",
+				"members": "Thibault Barske, Pierre Feray-Ferrand, Maxime Meganck, Gwenael Sénéchal",
 				"description":""
 			},
 			{
 				"name":"NormandBiz",
+				"members": "Sophie Herscovici, Cédric Joublot, Nelly Nguedjio, Edmond Takou",
 				"description":""
 			},
 			{
 				"name":"Nowledge",
+				"members": "Steven Ankri, Arthur Grandgerard, Guillaume Le Mière, Mathéo Raveux",
 				"description":""
 			},
 			{
 				"name":"Open Democratie",
+				"members": "Remi Boulier, Jeremie Legrand, Lua Marchetto, Benjamin Petit",
 				"description":""
 			},
 			{
 				"name":"Otougo",
+				"members": "Matthieu Chevrier, Jean Christophe Fossati, Florian Gomis, Christophe Pamart",
 				"description":""
 			},
 			{
 				"name":"Rentr'en Car",
+				"members": "Bertrand Bordage, Joseph Devarenne, Yoann Ono Dit Biot, Jean François Vo",
 				"description":""
 			},
 			{
 				"name":"Seine-aux-infos",
+				"members": "Bryan Daniel, Yassine Gremny, Tongtong Jiang, Antoine Thierry",
 				"description":""
 			},
 			{
 				"name":"Seino'vélo",
+				"members": "Jim Caignard, David Groult, Margaux Letellier, Laïla Oubaïta",
 				"description":""
 			},
 			{
 				"name":"Senior76.fr",
+				"members": "Thomas Ferney, Arnaud Lemercier, Maxime Mauchaussée, Maxime Tanésie",
 				"description":""
 			},
 			{
 				"name":"Skrounch",
+				"members": "Kevin Cauchois, Armand Charbonnier, Jonathan Lemonsu, Tony Schoener",
 				"description":""
 			},
 			{
 				"name":"tartetat.in",
+				"members": "Antoine Augusti, Étienne Batise, Thibaud Dauce, Merlin Nimier-David",
 				"description":""
 			},
 			{
 				"name":"Véloroutes76",
+				"members": "Bertrand Heuillard, Maxime Lentz, Thibault Palier",
 				"description":""
 			}
 		]
