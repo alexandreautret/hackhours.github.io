@@ -206,136 +206,52 @@ $(document).ready(function() {
 		var first 	= data.results.podium.first;
 		var second 	= data.results.podium.second;
 		var third 	= data.results.podium.third;
-		// First
-		$('#podium').append('<div class="panel panel-default">'
-								+'<div class="panel-heading">'
-									+'<div class="col-md-11" style="padding:0;">'
-										+'<h4 class="panel-title">'
-											+'<a data-toggle="collapse" data-parent="#questions" href="#description_first">'
-												+'1<span>'+first.name+'</span>'
-											+'</a>'
-										+'</h4>'
-									+'</div>'
-									+'<div class="col-md-1 col-sm-2 col-xs-2 open-podium readIcon"> '
-										+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'
-										+'<i class="fa fa-chevron-circle-down"></i>'
-										+'</a>'
-									+'</div>'
-								+'</div>'
-								+'<div id="description_first" class="panel-collapse collapse">'
-									+'<div class="panel-body">'
-										+'<strong>'+first.members+'</strong>'
-										+'<p>'+first.description+'</p>'
-									+'</div>'
-								+'</div>'
-							+'</div>');
-		// Second
-		$('#podium').append('<div class="panel panel-default">'
-								+'<div class="panel-heading">'
-									+'<div class="col-md-11" style="padding:0;">'
-										+'<h4 class="panel-title">'
-											+'<a data-toggle="collapse" data-parent="#questions" href="#description_second">'
-												+'2<span>'+second.name+'</span>'
-											+'</a>'
-										+'</h4>'
-									+'</div>'
-									+'<div class="col-md-1 col-sm-2 col-xs-2 open-podium readIcon"> '
-										+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'
-											+'<i class="fa fa-chevron-circle-down"></i>'
-										+'</a>'
-									+'</div>'
-								+'</div>'
-								+'<div id="description_second" class="panel-collapse collapse">'
-									+'<div class="panel-body">'
-										+'<strong>'+second.members+'</strong>'
-										+'<p>'+second.description+'</p>'
-									+'</div>'
-								+'</div>'
-							+'</div>');
-		// Third
-		$('#podium').append('<div class="panel panel-default">'
-								+'<div class="panel-heading">'
-									+'<div class="col-md-11" style="padding:0;">'
-										+'<h4 class="panel-title">'
-											+'<a data-toggle="collapse" data-parent="#questions" href="#description_third">'
-												+'3<span>'+third.name+'</span>'
-											+'</a>'
-										+'</h4>'
-									+'</div>'
-									+'<div class="col-md-1 col-sm-2 col-xs-2 open-podium readIcon"> '
-										+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'
-											+'<i class="fa fa-chevron-circle-down"></i>'
-										+'</a>'
-									+'</div>'
-								+'</div>'
-								+'<div id="description_third" class="panel-collapse collapse">'
-									+'<div class="panel-body">'
-										+'<strong>'+third.members+'</strong>'
-										+'<p>'+third.description+'</p>'
-									+'</div>'
-								+'</div>'
-							+'</div>'); 
-		// Jury's price
 		var fourth 	= data.results.fourth;
-		$('#jury_price').append('<div class="panel panel-default">'
-									+'<div class="panel-heading">'
-										+'<div class="col-md-11" style="padding:0;">'
-											+'<h4 class="panel-title">'
-												+'<a data-toggle="collapse" data-parent="#questions" href="#description_fourth">'
-													+'4<span>'+fourth.name+'</span>'
-												+'</a>'
-											+'</h4></div>'
-										+'<div class="col-md-1 col-sm-2 col-xs-2 open-podium readIcon" > '
-											+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'
-												+'<i class="fa fa-chevron-circle-down"></i>'
-											+'</a>'
-										+'</div>'
-									+'</div>'
-									+'<div id="description_fourth" class="panel-collapse collapse">'
-										+'<div class="panel-body">'
-											+'<strong>'+fourth.members+'</strong>'
-											+'<p>'+fourth.description+'</p>'
-										+'</div>'
-									+'</div>'
-								+'</div>');
-
+		var teams = [first, second, third, fourth];
+		createPodium(teams, 3, '#podium', '#jury_price', null, ['first', 'second', 'third', 'fourth']);
 		// Other teams
 		var other_teams = data.results.other_teams;
 		var mid_array 	= Math.round(data.results.other_teams.length/2);
-
-		for(var i in data.results.other_teams){
-			var other_team 	= other_teams[i];
-			var div_name 	= '';
-			if(i < mid_array)
-				// 11th first in left column
-				div_name = '#other_teams_1';
-			else
-				// Else in the right one
-				div_name = '#other_teams_2';
-			$(div_name).append('<div class="panel panel-default">'
-									+'<div class="panel-heading">'
-										+'<div class="col-md-11" style="padding:0;">'
-											+'<h4 class="panel-title">'
-												+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'
-													+'#<span>'+other_team.name+'</span>'
-												+'</a>'
-											+'</h4>'
-										+'</div>'
-										+'<div class="col-md-1 col-sm-2 col-xs-2 open-podium readIcon" > '
-											+'<a data-toggle="collapse" data-parent="#questions" href="#description_'+i+'">'
-												+'<i class="fa fa-chevron-circle-down"></i>'
-											+'</a>'
-										+'</div>'
-									+'</div>'
-									+'<div id="description_'+i+'" class="panel-collapse collapse">'
-										+'<div class="panel-body">'
-											+'<strong>'+other_team.members+'</strong>'
-											+'<p>'+other_team.description+'</p>'
-										+'</div>'
-									+'</div>'
-								+'</div>');
-		}
+		createPodium(other_teams, mid_array, '#other_teams_1', '#other_teams_2', '#', null);
 	});
 });
 
+// Create fields for the podium of a given array
+function createPodium(array, minVal, divName1, divName2, position, href){
+	// Get the position
+	// If not set, get it dynamically
+	var pos 		= '';
+	var div 		= '';
+	var index 		= 0;
+	var description = 'description_';
+	for(var i in array){
+		index++;
+		var team = array[i];
+		div = (i < minVal)? divName1 : divName2;
+		pos = (position)? position : index;
+		var desc = (href)? description+href[i] : description+i;
+		$(div).append('<div class="panel panel-default">'
+						+'<div class="panel-heading">'
+							+'<div class="col-md-11" style="padding:0;">'
+								+'<h4 class="panel-title">'
+									+'<a data-toggle="collapse" data-parent="#pods" href="#'+desc+'">'
+										+pos+'<span>'+team.name+'</span>'
+									+'</a>'
+								+'</h4>'
+							+'</div>'
+							+'<div class="col-md-1 col-sm-2 col-xs-2 open-podium readIcon" > '
+								+'<a data-toggle="collapse" data-parent="#pods" href="#'+desc+'">'
+									+'<i class="fa fa-chevron-circle-down"></i>'
+								+'</a>'
+							+'</div>'
+						+'</div>'
+						+'<div id="'+desc+'" class="panel-collapse collapse">'
+							+'<div class="panel-body">'
+								+'<strong>'+team.members+'</strong>'
+								+'<p>'+team.description+'</p>'
+							+'</div>'
+						+'</div>'
+					+'</div>');
+	}
+};
 
